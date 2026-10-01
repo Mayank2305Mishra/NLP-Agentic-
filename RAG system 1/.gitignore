@@ -1,0 +1,10 @@
+final_transcript*.json
+generated/
+data/
+*.pyc
+__pycache__/
+.env
+.venv/
+*.egg-info/
+.pytest_cache/
+.streamlit/

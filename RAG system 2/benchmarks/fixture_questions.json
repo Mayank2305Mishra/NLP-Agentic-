@@ -1,0 +1,1271 @@
+{
+  "version": 1,
+  "seed": 7,
+  "count": 64,
+  "source_hash": "34ba8faec8f8c1a795e6772641ab924e5f7adb278bd2b4d830382207d2cbc83c",
+  "questions": [
+    {
+      "question_id": "q001",
+      "category": "refund",
+      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome?",
+      "transcript_id": "8ea62cbb-c8df-42e7-9d69-506b9013db42",
+      "task": "task1",
+      "expected_evidence_turns": [
+        1,
+        5,
+        7,
+        9,
+        10,
+        17
+      ],
+      "anchor_terms": [
+        "refund",
+        "reimburse",
+        "money back"
+      ],
+      "expected_cause": "refund",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q002",
+      "category": "refund",
+      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome?",
+      "transcript_id": "c35d509a-a366-4694-916b-7d04322c6c30",
+      "task": "task1",
+      "expected_evidence_turns": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "anchor_terms": [
+        "refund",
+        "reimburse",
+        "money back"
+      ],
+      "expected_cause": "refund",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q003",
+      "category": "refund",
+      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome?",
+      "transcript_id": "28438879-47ca-4958-be1e-09c15cbfe2a7",
+      "task": "task1",
+      "expected_evidence_turns": [
+        20,
+        22
+      ],
+      "anchor_terms": [
+        "refund",
+        "reimburse",
+        "money back"
+      ],
+      "expected_cause": "refund",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q004",
+      "category": "refund",
+      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome?",
+      "transcript_id": "9c194bbb-5043-497b-84a7-a0ab139f484e",
+      "task": "task1",
+      "expected_evidence_turns": [
+        11,
+        18
+      ],
+      "anchor_terms": [
+        "refund",
+        "reimburse",
+        "money back"
+      ],
+      "expected_cause": "refund",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q005",
+      "category": "refund",
+      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome?",
+      "transcript_id": "c0380174-b06f-4c8a-b3d6-cb564d2b6e32",
+      "task": "task1",
+      "expected_evidence_turns": [
+        6,
+        9,
+        14,
+        34
+      ],
+      "anchor_terms": [
+        "refund",
+        "reimburse",
+        "money back"
+      ],
+      "expected_cause": "refund",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q006",
+      "category": "refund",
+      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome?",
+      "transcript_id": "7d3533af-ec22-4b10-a07b-c8e4cdd7a10e",
+      "task": "task1",
+      "expected_evidence_turns": [
+        14,
+        22
+      ],
+      "anchor_terms": [
+        "refund",
+        "reimburse",
+        "money back"
+      ],
+      "expected_cause": "refund",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q007",
+      "category": "refund",
+      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome?",
+      "transcript_id": "2611661f-d8c9-430b-9314-36a9a15c447e",
+      "task": "task1",
+      "expected_evidence_turns": [
+        1,
+        7,
+        8,
+        9,
+        10,
+        15
+      ],
+      "anchor_terms": [
+        "refund",
+        "reimburse",
+        "money back"
+      ],
+      "expected_cause": "refund",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q008",
+      "category": "refund",
+      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome?",
+      "transcript_id": "85256337-d1a6-4870-8ed6-fd2d34824456",
+      "task": "task1",
+      "expected_evidence_turns": [
+        1,
+        5,
+        6,
+        9,
+        10,
+        14
+      ],
+      "anchor_terms": [
+        "refund",
+        "reimburse",
+        "money back"
+      ],
+      "expected_cause": "refund",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q009",
+      "category": "cancellation",
+      "question": "Why did the customer want to cancel, and how did the agent respond?",
+      "transcript_id": "b97e89a5-71da-4c73-ae56-4266d62bd4f6",
+      "task": "task1",
+      "expected_evidence_turns": [
+        6
+      ],
+      "anchor_terms": [
+        "cancel",
+        "cancellation"
+      ],
+      "expected_cause": "cancel",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q010",
+      "category": "cancellation",
+      "question": "Why did the customer want to cancel, and how did the agent respond?",
+      "transcript_id": "d973ad26-41fd-4194-9a99-b06875744e97",
+      "task": "task1",
+      "expected_evidence_turns": [
+        4
+      ],
+      "anchor_terms": [
+        "cancel",
+        "cancellation"
+      ],
+      "expected_cause": "cancel",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q011",
+      "category": "cancellation",
+      "question": "Why did the customer want to cancel, and how did the agent respond?",
+      "transcript_id": "39c2963d-bc2e-46d8-96ed-173edd451215",
+      "task": "task1",
+      "expected_evidence_turns": [
+        17,
+        19,
+        20
+      ],
+      "anchor_terms": [
+        "cancel",
+        "cancellation"
+      ],
+      "expected_cause": "cancel",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q012",
+      "category": "cancellation",
+      "question": "Why did the customer want to cancel, and how did the agent respond?",
+      "transcript_id": "db770e24-60fe-4a9c-95ba-1ac1830028c3",
+      "task": "task1",
+      "expected_evidence_turns": [
+        26
+      ],
+      "anchor_terms": [
+        "cancel",
+        "cancellation"
+      ],
+      "expected_cause": "cancel",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q013",
+      "category": "cancellation",
+      "question": "Why did the customer want to cancel, and how did the agent respond?",
+      "transcript_id": "3c4380da-a6de-474b-a98e-a7a5dfffc3cb",
+      "task": "task1",
+      "expected_evidence_turns": [
+        25,
+        28,
+        34
+      ],
+      "anchor_terms": [
+        "cancel",
+        "cancellation"
+      ],
+      "expected_cause": "cancel",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q014",
+      "category": "cancellation",
+      "question": "Why did the customer want to cancel, and how did the agent respond?",
+      "transcript_id": "1962f3c5-e0df-4cda-91a8-ac3c0c19a529",
+      "task": "task1",
+      "expected_evidence_turns": [
+        24,
+        25,
+        26
+      ],
+      "anchor_terms": [
+        "cancel",
+        "cancellation"
+      ],
+      "expected_cause": "cancel",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q015",
+      "category": "cancellation",
+      "question": "Why did the customer want to cancel, and how did the agent respond?",
+      "transcript_id": "c01a8e7d-3b76-488e-ab90-c886a517df65",
+      "task": "task1",
+      "expected_evidence_turns": [
+        4,
+        5,
+        6,
+        7,
+        12,
+        15
+      ],
+      "anchor_terms": [
+        "cancel",
+        "cancellation"
+      ],
+      "expected_cause": "cancel",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q016",
+      "category": "cancellation",
+      "question": "Why did the customer want to cancel, and how did the agent respond?",
+      "transcript_id": "c87eed8c-c1ef-4c4c-b3ee-0b22956eb30d",
+      "task": "task1",
+      "expected_evidence_turns": [
+        3,
+        8
+      ],
+      "anchor_terms": [
+        "cancel",
+        "cancellation"
+      ],
+      "expected_cause": "cancel",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q017",
+      "category": "booking_error",
+      "question": "What booking problem did the customer report and how did the agent resolve it?",
+      "transcript_id": "bf3ad8ba-2822-41ff-b447-2b459c04e00f",
+      "task": "task1",
+      "expected_evidence_turns": [
+        10,
+        14,
+        36
+      ],
+      "anchor_terms": [
+        "wrong booking",
+        "booking error",
+        "incorrect reservation",
+        "rebook",
+        "wrong reservation"
+      ],
+      "expected_cause": "wrong booking",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q018",
+      "category": "booking_error",
+      "question": "What booking problem did the customer report and how did the agent resolve it?",
+      "transcript_id": "153eef61-06a8-445d-9bfb-f59c01765e2c",
+      "task": "task1",
+      "expected_evidence_turns": [
+        10,
+        14
+      ],
+      "anchor_terms": [
+        "wrong booking",
+        "booking error",
+        "incorrect reservation",
+        "rebook",
+        "wrong reservation"
+      ],
+      "expected_cause": "wrong booking",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q019",
+      "category": "booking_error",
+      "question": "What booking problem did the customer report and how did the agent resolve it?",
+      "transcript_id": "d2993f5e-9368-4256-b963-5e77a25b75c5",
+      "task": "task1",
+      "expected_evidence_turns": [
+        10,
+        14,
+        16,
+        18
+      ],
+      "anchor_terms": [
+        "wrong booking",
+        "booking error",
+        "incorrect reservation",
+        "rebook",
+        "wrong reservation"
+      ],
+      "expected_cause": "wrong booking",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q020",
+      "category": "booking_error",
+      "question": "What booking problem did the customer report and how did the agent resolve it?",
+      "transcript_id": "1135f6df-3f1b-450a-91fd-8ac1063778ef",
+      "task": "task1",
+      "expected_evidence_turns": [
+        18,
+        30
+      ],
+      "anchor_terms": [
+        "wrong booking",
+        "booking error",
+        "incorrect reservation",
+        "rebook",
+        "wrong reservation"
+      ],
+      "expected_cause": "wrong booking",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q021",
+      "category": "booking_error",
+      "question": "What booking problem did the customer report and how did the agent resolve it?",
+      "transcript_id": "77de02cb-3f75-43a6-b7ed-f19e44d2c883",
+      "task": "task1",
+      "expected_evidence_turns": [
+        34
+      ],
+      "anchor_terms": [
+        "wrong booking",
+        "booking error",
+        "incorrect reservation",
+        "rebook",
+        "wrong reservation"
+      ],
+      "expected_cause": "wrong booking",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q022",
+      "category": "booking_error",
+      "question": "What booking problem did the customer report and how did the agent resolve it?",
+      "transcript_id": "ca665e5b-d0aa-4b55-965a-add5e7c63196",
+      "task": "task1",
+      "expected_evidence_turns": [
+        25
+      ],
+      "anchor_terms": [
+        "wrong booking",
+        "booking error",
+        "incorrect reservation",
+        "rebook",
+        "wrong reservation"
+      ],
+      "expected_cause": "wrong booking",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q023",
+      "category": "booking_error",
+      "question": "What booking problem did the customer report and how did the agent resolve it?",
+      "transcript_id": "53363a96-3482-4b5a-9ae4-78e298c073bc",
+      "task": "task1",
+      "expected_evidence_turns": [
+        9,
+        26,
+        32
+      ],
+      "anchor_terms": [
+        "wrong booking",
+        "booking error",
+        "incorrect reservation",
+        "rebook",
+        "wrong reservation"
+      ],
+      "expected_cause": "wrong booking",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q024",
+      "category": "booking_error",
+      "question": "What booking problem did the customer report and how did the agent resolve it?",
+      "transcript_id": "a6229e13-c2e2-441d-9dfc-977fee0324cd",
+      "task": "task1",
+      "expected_evidence_turns": [
+        1,
+        31
+      ],
+      "anchor_terms": [
+        "wrong booking",
+        "booking error",
+        "incorrect reservation",
+        "rebook",
+        "wrong reservation"
+      ],
+      "expected_cause": "wrong booking",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q025",
+      "category": "pricing_dissatisfaction",
+      "question": "Why was the customer unhappy about pricing and what did the agent offer?",
+      "transcript_id": "5d73acfa-c16c-4ed5-9115-6a669f7fa0c8",
+      "task": "task1",
+      "expected_evidence_turns": [
+        1
+      ],
+      "anchor_terms": [
+        "overcharged",
+        "charged too much",
+        "too expensive",
+        "price is too high",
+        "unexpected charge"
+      ],
+      "expected_cause": "overcharged",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q026",
+      "category": "pricing_dissatisfaction",
+      "question": "Why was the customer unhappy about pricing and what did the agent offer?",
+      "transcript_id": "88ab0165-859c-4b99-8fd6-8f502d9d4a30",
+      "task": "task1",
+      "expected_evidence_turns": [
+        3
+      ],
+      "anchor_terms": [
+        "overcharged",
+        "charged too much",
+        "too expensive",
+        "price is too high",
+        "unexpected charge"
+      ],
+      "expected_cause": "overcharged",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q027",
+      "category": "pricing_dissatisfaction",
+      "question": "Why was the customer unhappy about pricing and what did the agent offer?",
+      "transcript_id": "a82e3ffe-2294-4c8e-88ba-b7647bee6d54",
+      "task": "task1",
+      "expected_evidence_turns": [
+        7
+      ],
+      "anchor_terms": [
+        "overcharged",
+        "charged too much",
+        "too expensive",
+        "price is too high",
+        "unexpected charge"
+      ],
+      "expected_cause": "overcharged",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q028",
+      "category": "pricing_dissatisfaction",
+      "question": "Why was the customer unhappy about pricing and what did the agent offer?",
+      "transcript_id": "434b8c58-bedf-4efb-9c0b-5e064a282abf",
+      "task": "task1",
+      "expected_evidence_turns": [
+        8
+      ],
+      "anchor_terms": [
+        "overcharged",
+        "charged too much",
+        "too expensive",
+        "price is too high",
+        "unexpected charge"
+      ],
+      "expected_cause": "overcharged",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q029",
+      "category": "pricing_dissatisfaction",
+      "question": "Why was the customer unhappy about pricing and what did the agent offer?",
+      "transcript_id": "9ebdb0c7-bcf2-4d9d-9164-8cd75a971cf8",
+      "task": "task1",
+      "expected_evidence_turns": [
+        21
+      ],
+      "anchor_terms": [
+        "overcharged",
+        "charged too much",
+        "too expensive",
+        "price is too high",
+        "unexpected charge"
+      ],
+      "expected_cause": "overcharged",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q030",
+      "category": "pricing_dissatisfaction",
+      "question": "Why was the customer unhappy about pricing and what did the agent offer?",
+      "transcript_id": "00293528-4d00-4418-b33a-bc8e779bcfe2",
+      "task": "task1",
+      "expected_evidence_turns": [
+        23
+      ],
+      "anchor_terms": [
+        "overcharged",
+        "charged too much",
+        "too expensive",
+        "price is too high",
+        "unexpected charge"
+      ],
+      "expected_cause": "overcharged",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q031",
+      "category": "pricing_dissatisfaction",
+      "question": "Why was the customer unhappy about pricing and what did the agent offer?",
+      "transcript_id": "a2feddb3-51ef-4710-b51d-d56c9f646c8e",
+      "task": "task1",
+      "expected_evidence_turns": [
+        8
+      ],
+      "anchor_terms": [
+        "overcharged",
+        "charged too much",
+        "too expensive",
+        "price is too high",
+        "unexpected charge"
+      ],
+      "expected_cause": "overcharged",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q032",
+      "category": "pricing_dissatisfaction",
+      "question": "Why was the customer unhappy about pricing and what did the agent offer?",
+      "transcript_id": "3a09a101-97c5-42a6-86c1-98285f58ef88",
+      "task": "task1",
+      "expected_evidence_turns": [
+        1,
+        6
+      ],
+      "anchor_terms": [
+        "overcharged",
+        "charged too much",
+        "too expensive",
+        "price is too high",
+        "unexpected charge"
+      ],
+      "expected_cause": "overcharged",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q033",
+      "category": "plan_comparison",
+      "question": "The customer compared options \u2014 what influenced their decision?",
+      "transcript_id": "ebd92b6d-c9a3-4a73-9ab6-67d57b210f15",
+      "task": "task1",
+      "expected_evidence_turns": [
+        26
+      ],
+      "anchor_terms": [
+        "compare",
+        "other plan",
+        "different plan",
+        "versus",
+        "better plan"
+      ],
+      "expected_cause": "compare",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q034",
+      "category": "plan_comparison",
+      "question": "The customer compared options \u2014 what influenced their decision?",
+      "transcript_id": "cf39baa7-b5d0-488f-b653-fa002f54e2b2",
+      "task": "task1",
+      "expected_evidence_turns": [
+        1
+      ],
+      "anchor_terms": [
+        "compare",
+        "other plan",
+        "different plan",
+        "versus",
+        "better plan"
+      ],
+      "expected_cause": "compare",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q035",
+      "category": "plan_comparison",
+      "question": "The customer compared options \u2014 what influenced their decision?",
+      "transcript_id": "985efc7a-1647-4295-b2c1-6598bfb7ed11",
+      "task": "task1",
+      "expected_evidence_turns": [
+        3,
+        4
+      ],
+      "anchor_terms": [
+        "compare",
+        "other plan",
+        "different plan",
+        "versus",
+        "better plan"
+      ],
+      "expected_cause": "compare",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q036",
+      "category": "plan_comparison",
+      "question": "The customer compared options \u2014 what influenced their decision?",
+      "transcript_id": "5452314c-6865-4426-8acb-a6dac2830930",
+      "task": "task1",
+      "expected_evidence_turns": [
+        11
+      ],
+      "anchor_terms": [
+        "compare",
+        "other plan",
+        "different plan",
+        "versus",
+        "better plan"
+      ],
+      "expected_cause": "compare",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q037",
+      "category": "plan_comparison",
+      "question": "The customer compared options \u2014 what influenced their decision?",
+      "transcript_id": "b492835d-b220-4493-9b19-14fc4163956a",
+      "task": "task1",
+      "expected_evidence_turns": [
+        10
+      ],
+      "anchor_terms": [
+        "compare",
+        "other plan",
+        "different plan",
+        "versus",
+        "better plan"
+      ],
+      "expected_cause": "compare",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q038",
+      "category": "plan_comparison",
+      "question": "The customer compared options \u2014 what influenced their decision?",
+      "transcript_id": "02a91f45-5863-4dec-97b1-9237a955fac4",
+      "task": "task1",
+      "expected_evidence_turns": [
+        1,
+        2,
+        10,
+        16
+      ],
+      "anchor_terms": [
+        "compare",
+        "other plan",
+        "different plan",
+        "versus",
+        "better plan"
+      ],
+      "expected_cause": "compare",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q039",
+      "category": "plan_comparison",
+      "question": "The customer compared options \u2014 what influenced their decision?",
+      "transcript_id": "2bb832e7-14dc-454d-bc6c-cd8488737819",
+      "task": "task1",
+      "expected_evidence_turns": [
+        1,
+        4,
+        5,
+        9,
+        13,
+        21
+      ],
+      "anchor_terms": [
+        "compare",
+        "other plan",
+        "different plan",
+        "versus",
+        "better plan"
+      ],
+      "expected_cause": "compare",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q040",
+      "category": "plan_comparison",
+      "question": "The customer compared options \u2014 what influenced their decision?",
+      "transcript_id": "769dcd26-7b35-4fd3-a4c0-2e46484a3cfd",
+      "task": "task1",
+      "expected_evidence_turns": [
+        3,
+        9,
+        19,
+        20
+      ],
+      "anchor_terms": [
+        "compare",
+        "other plan",
+        "different plan",
+        "versus",
+        "better plan"
+      ],
+      "expected_cause": "compare",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q041",
+      "category": "upsell",
+      "question": "Did the agent propose an upgrade, and how did the customer react?",
+      "transcript_id": "6a12057f-a08a-4f64-ae40-21f45de07a21",
+      "task": "task1",
+      "expected_evidence_turns": [
+        2,
+        6,
+        8,
+        21,
+        33,
+        34
+      ],
+      "anchor_terms": [
+        "upgrade",
+        "upsell",
+        "add-on",
+        "premium plan"
+      ],
+      "expected_cause": "upgrade",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q042",
+      "category": "upsell",
+      "question": "Did the agent propose an upgrade, and how did the customer react?",
+      "transcript_id": "6ddcd557-47e3-4417-8ace-65d462544d1a",
+      "task": "task1",
+      "expected_evidence_turns": [
+        20
+      ],
+      "anchor_terms": [
+        "upgrade",
+        "upsell",
+        "add-on",
+        "premium plan"
+      ],
+      "expected_cause": "upgrade",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q043",
+      "category": "upsell",
+      "question": "Did the agent propose an upgrade, and how did the customer react?",
+      "transcript_id": "113f1f86-ddb6-422a-8ec4-c470051741bf",
+      "task": "task1",
+      "expected_evidence_turns": [
+        18,
+        24,
+        26,
+        30
+      ],
+      "anchor_terms": [
+        "upgrade",
+        "upsell",
+        "add-on",
+        "premium plan"
+      ],
+      "expected_cause": "upgrade",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q044",
+      "category": "upsell",
+      "question": "Did the agent propose an upgrade, and how did the customer react?",
+      "transcript_id": "9f2a078c-5a02-4abb-ba5b-486ae275d08e",
+      "task": "task1",
+      "expected_evidence_turns": [
+        22
+      ],
+      "anchor_terms": [
+        "upgrade",
+        "upsell",
+        "add-on",
+        "premium plan"
+      ],
+      "expected_cause": "upgrade",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q045",
+      "category": "upsell",
+      "question": "Did the agent propose an upgrade, and how did the customer react?",
+      "transcript_id": "103422fb-45b7-4b62-847e-387494b6273a",
+      "task": "task1",
+      "expected_evidence_turns": [
+        28
+      ],
+      "anchor_terms": [
+        "upgrade",
+        "upsell",
+        "add-on",
+        "premium plan"
+      ],
+      "expected_cause": "upgrade",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q046",
+      "category": "upsell",
+      "question": "Did the agent propose an upgrade, and how did the customer react?",
+      "transcript_id": "3174f942-c8da-4ee9-acd9-df7a9c2bde36",
+      "task": "task1",
+      "expected_evidence_turns": [
+        7,
+        8,
+        18
+      ],
+      "anchor_terms": [
+        "upgrade",
+        "upsell",
+        "add-on",
+        "premium plan"
+      ],
+      "expected_cause": "upgrade",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q047",
+      "category": "upsell",
+      "question": "Did the agent propose an upgrade, and how did the customer react?",
+      "transcript_id": "f1414b3b-b4a8-4323-a70d-7fc300093811",
+      "task": "task1",
+      "expected_evidence_turns": [
+        1,
+        3,
+        12,
+        16,
+        20
+      ],
+      "anchor_terms": [
+        "upgrade",
+        "upsell",
+        "add-on",
+        "premium plan"
+      ],
+      "expected_cause": "upgrade",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q048",
+      "category": "upsell",
+      "question": "Did the agent propose an upgrade, and how did the customer react?",
+      "transcript_id": "c6129eb3-dc28-46a1-a9ca-c730ec5bdd01",
+      "task": "task1",
+      "expected_evidence_turns": [
+        1,
+        4,
+        10,
+        23
+      ],
+      "anchor_terms": [
+        "upgrade",
+        "upsell",
+        "add-on",
+        "premium plan"
+      ],
+      "expected_cause": "upgrade",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q049",
+      "category": "product_defect",
+      "question": "What defect did the customer report, and what resolution was offered?",
+      "transcript_id": "47df0dd1-5329-43c2-ad05-e7aefaab21a2",
+      "task": "task1",
+      "expected_evidence_turns": [
+        1,
+        7,
+        8,
+        14,
+        15,
+        16
+      ],
+      "anchor_terms": [
+        "not working",
+        "broken",
+        "defect",
+        "damaged",
+        "malfunction"
+      ],
+      "expected_cause": "not working",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q050",
+      "category": "product_defect",
+      "question": "What defect did the customer report, and what resolution was offered?",
+      "transcript_id": "b3e30057-d850-4b67-9b42-5b81e25c3afc",
+      "task": "task1",
+      "expected_evidence_turns": [
+        7
+      ],
+      "anchor_terms": [
+        "not working",
+        "broken",
+        "defect",
+        "damaged",
+        "malfunction"
+      ],
+      "expected_cause": "not working",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q051",
+      "category": "product_defect",
+      "question": "What defect did the customer report, and what resolution was offered?",
+      "transcript_id": "d5beef81-96fd-4293-8594-c403c453d8a6",
+      "task": "task1",
+      "expected_evidence_turns": [
+        1,
+        12,
+        24,
+        26
+      ],
+      "anchor_terms": [
+        "not working",
+        "broken",
+        "defect",
+        "damaged",
+        "malfunction"
+      ],
+      "expected_cause": "not working",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q052",
+      "category": "product_defect",
+      "question": "What defect did the customer report, and what resolution was offered?",
+      "transcript_id": "d27fd0dc-03cc-4115-b618-0c672f8716c2",
+      "task": "task1",
+      "expected_evidence_turns": [
+        1,
+        6,
+        17,
+        37
+      ],
+      "anchor_terms": [
+        "not working",
+        "broken",
+        "defect",
+        "damaged",
+        "malfunction"
+      ],
+      "expected_cause": "not working",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q053",
+      "category": "product_defect",
+      "question": "What defect did the customer report, and what resolution was offered?",
+      "transcript_id": "2de9197a-f190-4f01-ac33-b72f0489fe48",
+      "task": "task1",
+      "expected_evidence_turns": [
+        1,
+        10,
+        15
+      ],
+      "anchor_terms": [
+        "not working",
+        "broken",
+        "defect",
+        "damaged",
+        "malfunction"
+      ],
+      "expected_cause": "not working",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q054",
+      "category": "product_defect",
+      "question": "What defect did the customer report, and what resolution was offered?",
+      "transcript_id": "a6a1608b-6466-4030-9733-3a411755e131",
+      "task": "task1",
+      "expected_evidence_turns": [
+        5
+      ],
+      "anchor_terms": [
+        "not working",
+        "broken",
+        "defect",
+        "damaged",
+        "malfunction"
+      ],
+      "expected_cause": "not working",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q055",
+      "category": "product_defect",
+      "question": "What defect did the customer report, and what resolution was offered?",
+      "transcript_id": "5748f3a5-27de-40d0-923f-a1603febbe29",
+      "task": "task1",
+      "expected_evidence_turns": [
+        9
+      ],
+      "anchor_terms": [
+        "not working",
+        "broken",
+        "defect",
+        "damaged",
+        "malfunction"
+      ],
+      "expected_cause": "not working",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q056",
+      "category": "product_defect",
+      "question": "What defect did the customer report, and what resolution was offered?",
+      "transcript_id": "cf4d693b-b8bf-4cfd-981f-9fc34b32c357",
+      "task": "task1",
+      "expected_evidence_turns": [
+        1,
+        13,
+        26
+      ],
+      "anchor_terms": [
+        "not working",
+        "broken",
+        "defect",
+        "damaged",
+        "malfunction"
+      ],
+      "expected_cause": "not working",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q057",
+      "category": "service_complaint",
+      "question": "What service issue did the customer complain about, and how was it handled?",
+      "transcript_id": "47ee641d-c29a-4854-ac6e-273edd1d3d69",
+      "task": "task1",
+      "expected_evidence_turns": [
+        24
+      ],
+      "anchor_terms": [
+        "complaint",
+        "unhappy",
+        "frustrated",
+        "dissatisfied",
+        "poor service"
+      ],
+      "expected_cause": "complaint",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q058",
+      "category": "service_complaint",
+      "question": "What service issue did the customer complain about, and how was it handled?",
+      "transcript_id": "927c726a-58f0-40d5-8464-63dae7597402",
+      "task": "task1",
+      "expected_evidence_turns": [
+        28
+      ],
+      "anchor_terms": [
+        "complaint",
+        "unhappy",
+        "frustrated",
+        "dissatisfied",
+        "poor service"
+      ],
+      "expected_cause": "complaint",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q059",
+      "category": "service_complaint",
+      "question": "What service issue did the customer complain about, and how was it handled?",
+      "transcript_id": "fb7388d0-0b23-4e01-822e-71e5f55264ea",
+      "task": "task1",
+      "expected_evidence_turns": [
+        1
+      ],
+      "anchor_terms": [
+        "complaint",
+        "unhappy",
+        "frustrated",
+        "dissatisfied",
+        "poor service"
+      ],
+      "expected_cause": "complaint",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q060",
+      "category": "service_complaint",
+      "question": "What service issue did the customer complain about, and how was it handled?",
+      "transcript_id": "44b0839b-e556-44d8-b543-c83e822db4c0",
+      "task": "task1",
+      "expected_evidence_turns": [
+        42
+      ],
+      "anchor_terms": [
+        "complaint",
+        "unhappy",
+        "frustrated",
+        "dissatisfied",
+        "poor service"
+      ],
+      "expected_cause": "complaint",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q061",
+      "category": "service_complaint",
+      "question": "What service issue did the customer complain about, and how was it handled?",
+      "transcript_id": "efeab8a4-eaa0-4582-95af-623f03bec4c4",
+      "task": "task1",
+      "expected_evidence_turns": [
+        5
+      ],
+      "anchor_terms": [
+        "complaint",
+        "unhappy",
+        "frustrated",
+        "dissatisfied",
+        "poor service"
+      ],
+      "expected_cause": "complaint",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q062",
+      "category": "service_complaint",
+      "question": "What service issue did the customer complain about, and how was it handled?",
+      "transcript_id": "5fb7681d-d7f1-4e2e-81e6-917829b22e69",
+      "task": "task1",
+      "expected_evidence_turns": [
+        1,
+        19,
+        20
+      ],
+      "anchor_terms": [
+        "complaint",
+        "unhappy",
+        "frustrated",
+        "dissatisfied",
+        "poor service"
+      ],
+      "expected_cause": "complaint",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q063",
+      "category": "service_complaint",
+      "question": "What service issue did the customer complain about, and how was it handled?",
+      "transcript_id": "61b5791b-331c-47d5-86fd-c632c85b20b3",
+      "task": "task1",
+      "expected_evidence_turns": [
+        24
+      ],
+      "anchor_terms": [
+        "complaint",
+        "unhappy",
+        "frustrated",
+        "dissatisfied",
+        "poor service"
+      ],
+      "expected_cause": "complaint",
+      "expected_effect": null
+    },
+    {
+      "question_id": "q064",
+      "category": "service_complaint",
+      "question": "What service issue did the customer complain about, and how was it handled?",
+      "transcript_id": "a869edf9-1899-492b-b0c3-5e30d5036d41",
+      "task": "task1",
+      "expected_evidence_turns": [
+        31
+      ],
+      "anchor_terms": [
+        "complaint",
+        "unhappy",
+        "frustrated",
+        "dissatisfied",
+        "poor service"
+      ],
+      "expected_cause": "complaint",
+      "expected_effect": null
+    }
+  ]
+}

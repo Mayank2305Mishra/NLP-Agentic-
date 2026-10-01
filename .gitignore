@@ -1,0 +1,12 @@
+.DS_Store
+.env
+final_transcript*.json
+RAG system 1/generated/
+RAG system 2/data/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.venv/
+*.egg-info/
+.streamlit/

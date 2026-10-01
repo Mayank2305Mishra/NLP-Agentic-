@@ -1,0 +1,65 @@
+system: system2
+
+dataset:
+  path: final_transcripts.json
+  processed_dir: data/processed
+  index_dir: data/index
+  sample_size: 8000
+  sample_seed: 42
+  stratification_key: intent
+
+retrieval:
+  backend: sqlite_fts5
+  conversation_text_mode: full
+  conversation_pool: 50
+  conversation_top_k: 3
+  turns_per_conversation: 5
+  turn_pool_per_conversation: 60
+  neighbor_window: 2
+  neighbor_window_max: 4
+  query_expansion: true
+  metadata_boost: true
+  hard_filter_on_explicit_intent: true
+  causal_scoring: true
+  include_post_call: false
+  weights:
+    bm25: 0.70
+    metadata: 0.10
+    phrase: 0.08
+    causal: 0.07
+    outcome: 0.05
+
+evidence:
+  task1_max_tokens: 1500
+  task2_max_tokens: 2500
+  min_score: 0.30
+  min_conversation_score: 0.25
+  expand_causal_gap: true
+
+generation:
+  provider: ollama
+  model: qwen3.5:4b-mlx
+  temperature: 0
+  num_ctx: 4096
+  num_predict: 1400
+  request_timeout_s: 300
+  parse_retries: 1
+  ollama_url: http://localhost:11434
+  bonsai_url: ""
+  bonsai_model: ""
+
+grounding:
+  min_claim_support: 0.4
+  reject_on_contamination: true
+
+cache:
+  enabled: true
+  max_entries: 256
+
+logging:
+  level: INFO
+  path: logs/system2.jsonl
+  debug_evidence: false
+
+ablation:
+  mode: full
