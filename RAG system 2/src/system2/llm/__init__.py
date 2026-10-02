@@ -13,12 +13,22 @@ class GenerationResult:
     generation_ms: float = 0.0
     prompt_tokens: int | None = None
     output_tokens: int | None = None
+    prompt_eval_ms: float | None = None
+    eval_ms: float | None = None
 
     @property
     def tokens_per_second(self) -> float | None:
-        if not self.output_tokens or not self.generation_ms:
+        output_tokens = self.output_tokens
+        duration_ms = self.eval_ms or self.generation_ms
+        if not output_tokens or not duration_ms:
             return None
-        return round(self.output_tokens / (self.generation_ms / 1000.0), 2)
+        return round(output_tokens / (duration_ms / 1000.0), 2)
+
+    @property
+    def input_tokens_per_second(self) -> float | None:
+        if not self.prompt_tokens or not self.prompt_eval_ms:
+            return None
+        return round(self.prompt_tokens / (self.prompt_eval_ms / 1000.0), 2)
 
 
 @runtime_checkable
@@ -56,4 +66,8 @@ def build_client(config) -> LLMClient:
             base_url=gen.bonsai_url,
             model=gen.bonsai_model or gen.model,
         )
+    if gen.provider == "groq":
+        from .groq import GroqClient
+
+        return GroqClient(model=gen.model)
     raise ValueError(f"unknown LLM provider: {gen.provider!r}")

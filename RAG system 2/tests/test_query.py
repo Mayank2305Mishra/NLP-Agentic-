@@ -10,6 +10,14 @@ def test_task_classification():
     assert classify_task("Summarize the entire call end to end") == "task2"
     assert classify_task("Compare the two plans the customers discussed") == "task2"
     assert detect_comparison("compare the conversations about refunds") is True
+    assert detect_comparison("compare the two conversations side by side") is True
+    # single-customer "compare options" questions stay conversation-local (§21)
+    assert detect_comparison(
+        "The customer compared options — what influenced their decision?"
+    ) is False
+    assert detect_comparison(
+        "Customer wanted to compare home insurance plans"
+    ) is False
 
 
 def test_query_plan_structure():
@@ -26,6 +34,23 @@ def test_explicit_intent_detection():
     plan = make_processor().process("what happens during a cancellation request")
     assert plan.explicit_intent == "Cancellations"
     assert plan.metadata_hints["intent"] == "Cancellations"
+    # token-level match: soft boost only, never a hard filter (spec §9.1)
+    assert plan.intent_match == "token"
+
+
+def test_verbatim_intent_is_hard_constraint():
+    plan = make_processor().process("list all Cancellations calls from Monday")
+    assert plan.explicit_intent == "Cancellations"
+    assert plan.intent_match == "verbatim"
+
+
+def test_generic_role_word_never_sets_intent():
+    # "customer" must not map to "Customer trust": turning a guessed hint into a
+    # hard filter caused catastrophic recall loss (spec §9.1).
+    proc = QueryProcessor(intents=["Customer trust", "Billing & Payments"])
+    plan = proc.process("why did the customer ask for a refund")
+    assert plan.explicit_intent is None
+    assert plan.intent_match is None
 
 
 def test_expansion_is_deterministic():

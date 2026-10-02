@@ -1,0 +1,17 @@
+{
+  "benchmark_version": 1,
+  "created_at": "2026-10-02T07:04:50.900406+00:00",
+  "source_fixture": "RAG system 2/benchmarks/fixture_questions.json",
+  "benchmark_hash": "458bcab989b8ef1b918524c64d95252e282210294cb0e7580c93df50a656daad",
+  "seed": 42,
+  "counts": {
+    "dev": 38,
+    "test": 13,
+    "stress": 13
+  },
+  "split_hashes": {
+    "dev": "58efe13b6f01ad0c670d3f65d88579645938917b4c43f5e7d0a141e0714be089",
+    "test": "e8183d469a216d2610399a54da960fc069181a35ed4a4a6e1598b711f94cece5",
+    "stress": "7b3bd5dbbb6426a982f8f8d8b3bfb982481adf63cb3ba8c1e427a8c96c84401e"
+  }
+}

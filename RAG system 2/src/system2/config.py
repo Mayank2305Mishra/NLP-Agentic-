@@ -14,11 +14,18 @@ DEFAULT_CONFIG_PATH = PROJECT_ROOT / "configs" / "system2.yaml"
 
 @dataclass
 class Weights:
-    bm25: float = 0.70
-    metadata: float = 0.10
-    phrase: float = 0.08
-    causal: float = 0.07
-    outcome: float = 0.05
+    """Calibrated on the retrieval fixture benchmark per spec §10 (sum = 1.00).
+
+    Spec starting values were 0.70/0.10/0.08/0.07/0.05; calibration showed the
+    inferred-metadata and saturated causal/outcome cues at conversation level
+    were overpowering BM25 (hit@1 0.41 → 0.73 after re-weighting).
+    """
+
+    bm25: float = 0.85
+    metadata: float = 0.05
+    phrase: float = 0.05
+    causal: float = 0.02
+    outcome: float = 0.03
 
 
 @dataclass

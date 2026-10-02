@@ -116,12 +116,11 @@ def build_index(
     counts["build_seconds"] = build_s
     counts["population"] = population
     counts["skipped_conversations"] = skipped
+    counts["db_size_bytes"] = config.dataset.db_path.stat().st_size
     stats_path = config.dataset.index_path / "index_stats.json"
     stats_path.parent.mkdir(parents=True, exist_ok=True)
     with open(stats_path, "w", encoding="utf-8") as fh:
         json.dump(counts, fh, indent=2)
-    db_size = config.dataset.db_path.stat().st_size
-    counts["db_size_bytes"] = db_size
     log.info("index built in %.1fs: %s", build_s, counts)
     store.close()
     return counts

@@ -40,17 +40,19 @@ def evaluate_evidence_gate(
             detail=decision.detail,
         )
 
-    if best_turn_score < config.evidence.min_score:
+    if combined < config.evidence.min_score:
         decision = decisions.record(
             INSUFFICIENT,
-            "no turn reached minimum evidence score",
-            round(best_turn_score, 4),
+            "combined evidence score below minimum",
+            round(combined, 4),
             transcript_id=best.transcript_id,
+            conversation_score=round(best.score, 4),
+            best_turn_score=round(best_turn_score, 4),
         )
         return GateDecision(
             INSUFFICIENT,
             decision.reason,
-            round(best_turn_score, 4),
+            round(combined, 4),
             transcript_id=best.transcript_id,
             detail=decision.detail,
         )

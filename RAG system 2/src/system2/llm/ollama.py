@@ -45,6 +45,8 @@ class OllamaClient:
         chunks: list[str] = []
         prompt_tokens: int | None = None
         output_tokens: int | None = None
+        prompt_eval_ms: float | None = None
+        eval_ms: float | None = None
 
         with requests.post(
             f"{self.base_url}/api/chat", json=payload, stream=True, timeout=timeout_s
@@ -65,6 +67,10 @@ class OllamaClient:
                     prompt_tokens = data["prompt_eval_count"]
                 if data.get("eval_count") is not None:
                     output_tokens = data["eval_count"]
+                if data.get("prompt_eval_duration") is not None:
+                    prompt_eval_ms = round(data["prompt_eval_duration"] / 1e6, 3)
+                if data.get("eval_duration") is not None:
+                    eval_ms = round(data["eval_duration"] / 1e6, 3)
                 if data.get("done"):
                     break
 
@@ -77,4 +83,6 @@ class OllamaClient:
             generation_ms=generation_ms,
             prompt_tokens=prompt_tokens,
             output_tokens=output_tokens,
+            prompt_eval_ms=prompt_eval_ms,
+            eval_ms=eval_ms,
         )

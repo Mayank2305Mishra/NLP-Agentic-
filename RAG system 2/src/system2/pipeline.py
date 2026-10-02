@@ -170,32 +170,40 @@ class Pipeline:
             return None, True, info
 
         system, prompt = build_prompt(plan.task, plan.raw_query, retrieval.pack.text)
-        gen = self.client.generate(
-            system,
-            prompt,
-            temperature=self.config.generation.temperature,
-            num_predict=self.config.generation.num_predict,
-            timeout_s=self.config.generation.request_timeout_s,
-        )
-        parse_begin = time.perf_counter()
-        raw = gen.text
-        answer, parse_errors = parse_answer(raw)
-        retries = 0
-        while answer is None and retries < self.config.generation.parse_retries:
-            retries += 1
-            retry = self.client.generate(
+        try:
+            gen = self.client.generate(
                 system,
-                prompt + "\n\nYour previous reply was not valid JSON. Return only the JSON object.",
+                prompt,
                 temperature=self.config.generation.temperature,
                 num_predict=self.config.generation.num_predict,
                 timeout_s=self.config.generation.request_timeout_s,
             )
-            raw = retry.text
+            parse_begin = time.perf_counter()
+            raw = gen.text
             answer, parse_errors = parse_answer(raw)
-            gen.generation_ms += retry.generation_ms
-            gen.output_tokens = (gen.output_tokens or 0) + (retry.output_tokens or 0)
-            if retry.prompt_tokens and not gen.prompt_tokens:
-                gen.prompt_tokens = retry.prompt_tokens
+            retries = 0
+            while answer is None and retries < self.config.generation.parse_retries:
+                retries += 1
+                retry = self.client.generate(
+                    system,
+                    prompt + "\n\nYour previous reply was not valid JSON. Return only the JSON object.",
+                    temperature=self.config.generation.temperature,
+                    num_predict=self.config.generation.num_predict,
+                    timeout_s=self.config.generation.request_timeout_s,
+                )
+                raw = retry.text
+                answer, parse_errors = parse_answer(raw)
+                gen.generation_ms += retry.generation_ms
+                gen.output_tokens = (gen.output_tokens or 0) + (retry.output_tokens or 0)
+                if retry.prompt_tokens and not gen.prompt_tokens:
+                    gen.prompt_tokens = retry.prompt_tokens
+        except Exception as exc:
+            # ponytail: preserve retrieved evidence and a typed failure; retry policy belongs to the client.
+            errors.append(f"generation_unavailable: {type(exc).__name__}: {exc}")
+            timer.set("generation_ttft_ms", None)
+            timer.set("generation_ms", 0.0)
+            timer.set("parse_ms", 0.0)
+            return None, False, info
         parse_ms = round((time.perf_counter() - parse_begin) * 1000, 3)
         timer.set("parse_ms", parse_ms)
         if answer is None:
@@ -208,6 +216,7 @@ class Pipeline:
             "input_tokens": gen.prompt_tokens,
             "output_tokens": gen.output_tokens,
             "context_tokens": gen.prompt_tokens,
+            "input_tokens_per_second": gen.input_tokens_per_second,
             "output_tokens_per_second": gen.tokens_per_second,
         }
         return answer, answer is not None, info

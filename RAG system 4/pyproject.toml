@@ -1,0 +1,26 @@
+[project]
+name = "system4-quality-rag"
+version = "1.0.0"
+description = "System 4: local-first, provenance-preserving agentic/quality causal RAG"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+keywords = ["rag", "retrieval", "causal", "benchmark", "llm", "grounding"]
+# Core is stdlib-only on purpose: local-first, reproducible, no hidden network calls.
+dependencies = []
+
+[project.optional-dependencies]
+ui = ["streamlit>=1.36"]
+test = ["pytest>=8"]
+rerank = ["sentence-transformers>=2.7"]  # optional cross-encoder (§11)
+all = ["streamlit>=1.36", "pytest>=8", "sentence-transformers>=2.7"]
+
+[project.scripts]
+system4-build-index = "scripts.build_index:main"
+system4-benchmark = "scripts.run_benchmark:main"
+system4-inspect-trace = "scripts.inspect_trace:main"
+system4-build-questions = "scripts.build_questions:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

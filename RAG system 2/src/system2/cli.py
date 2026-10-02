@@ -68,6 +68,7 @@ def cmd_benchmark(args: argparse.Namespace) -> int:
         use_llm=not args.retrieval_only,
         limit=args.limit,
         ablation=args.ablation,
+        output_dir=args.output_dir,
     )
     print(json.dumps(results["summary"], indent=2, default=str))
     return 0
@@ -118,6 +119,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--limit", type=int, default=None)
     p.add_argument("--retrieval-only", action="store_true")
     p.add_argument("--ablation", default=None)
+    p.add_argument("--output-dir", default=None, help="where to write the results json")
     p.set_defaults(func=cmd_benchmark)
 
     p = sub.add_parser("fixture", help="build the retrieval evaluation fixture")

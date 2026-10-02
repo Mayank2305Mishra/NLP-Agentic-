@@ -49,6 +49,12 @@ def test_build_processed_and_sampling_and_index(config, sample_conversations):
     assert counts["turns"] == 48
     assert counts["conv_fts"] == 6
 
+    stats_on_disk = json.loads(
+        (config.dataset.index_path / "index_stats.json").read_text(encoding="utf-8")
+    )
+    assert stats_on_disk["db_size_bytes"] > 0
+    assert stats_on_disk["build_seconds"] >= 0
+
 
 def test_parse_conversation_normalizes(config):
     conv = parse_conversation(

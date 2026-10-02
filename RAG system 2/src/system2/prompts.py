@@ -1,5 +1,8 @@
 from __future__ import annotations
 
+#: Bump whenever the system prompt or output schemas change (§32 reproducibility).
+PROMPT_VERSION = "1"
+
 CORE_RULES = """You are a strict causal analysis engine over customer-service call transcripts.
 Rules:
 - Use only the supplied evidence. Evidence is authoritative.

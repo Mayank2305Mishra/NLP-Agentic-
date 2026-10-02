@@ -7,7 +7,7 @@
     {
       "question_id": "q001",
       "category": "refund",
-      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome?",
+      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome? Caller context: Logan Patel called to inquire about refund options for a recent product return at UrbanCart.",
       "transcript_id": "8ea62cbb-c8df-42e7-9d69-506b9013db42",
       "task": "task1",
       "expected_evidence_turns": [
@@ -29,7 +29,7 @@
     {
       "question_id": "q002",
       "category": "refund",
-      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome?",
+      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome? Caller context: Customer called to inquire about the delay in refund processing for a recent transaction.",
       "transcript_id": "c35d509a-a366-4694-916b-7d04322c6c30",
       "task": "task1",
       "expected_evidence_turns": [
@@ -51,7 +51,7 @@
     {
       "question_id": "q003",
       "category": "refund",
-      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome?",
+      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome? Caller context: Customer Ella Campbell called to report quality issues with her StyleLoop jacket and inquire about feedback resolution options.",
       "transcript_id": "28438879-47ca-4958-be1e-09c15cbfe2a7",
       "task": "task1",
       "expected_evidence_turns": [
@@ -69,7 +69,7 @@
     {
       "question_id": "q004",
       "category": "refund",
-      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome?",
+      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome? Caller context: Amelia Cook contacted Civic Trust customer service regarding unexpected foreign transaction fees on her card.",
       "transcript_id": "9c194bbb-5043-497b-84a7-a0ab139f484e",
       "task": "task1",
       "expected_evidence_turns": [
@@ -87,7 +87,7 @@
     {
       "question_id": "q005",
       "category": "refund",
-      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome?",
+      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome? Caller context: Customer contacted to check on the status and resolution of her delayed refund.",
       "transcript_id": "c0380174-b06f-4c8a-b3d6-cb564d2b6e32",
       "task": "task1",
       "expected_evidence_turns": [
@@ -107,7 +107,7 @@
     {
       "question_id": "q006",
       "category": "refund",
-      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome?",
+      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome? Caller context: Carter Gomez called to address a billing issue related to his recent stay at Premier Resorts in New York City.",
       "transcript_id": "7d3533af-ec22-4b10-a07b-c8e4cdd7a10e",
       "task": "task1",
       "expected_evidence_turns": [
@@ -125,7 +125,7 @@
     {
       "question_id": "q007",
       "category": "refund",
-      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome?",
+      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome? Caller context: Customer requesting clarification on claim refund outcomes and processes.",
       "transcript_id": "2611661f-d8c9-430b-9314-36a9a15c447e",
       "task": "task1",
       "expected_evidence_turns": [
@@ -147,7 +147,7 @@
     {
       "question_id": "q008",
       "category": "refund",
-      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome?",
+      "question": "Why did the customer ask for a refund, what did the agent do, and what was the outcome? Caller context: Inquiry about refund policy for a canceled flight on AeroLink Airlines.",
       "transcript_id": "85256337-d1a6-4870-8ed6-fd2d34824456",
       "task": "task1",
       "expected_evidence_turns": [
@@ -169,7 +169,7 @@
     {
       "question_id": "q009",
       "category": "cancellation",
-      "question": "Why did the customer want to cancel, and how did the agent respond?",
+      "question": "Why did the customer want to cancel, and how did the agent respond? Caller context: Customer Luke Roberts called to discuss refund processes between MetroJet and United due to a refund request for his upcoming trip from SFO to JFK.",
       "transcript_id": "b97e89a5-71da-4c73-ae56-4266d62bd4f6",
       "task": "task1",
       "expected_evidence_turns": [
@@ -185,7 +185,7 @@
     {
       "question_id": "q010",
       "category": "cancellation",
-      "question": "Why did the customer want to cancel, and how did the agent respond?",
+      "question": "Why did the customer want to cancel, and how did the agent respond? Caller context: Customer called to address complaints about fare class restrictions and seek compensation for a delay.",
       "transcript_id": "d973ad26-41fd-4194-9a99-b06875744e97",
       "task": "task1",
       "expected_evidence_turns": [
@@ -201,7 +201,7 @@
     {
       "question_id": "q011",
       "category": "cancellation",
-      "question": "Why did the customer want to cancel, and how did the agent respond?",
+      "question": "Why did the customer want to cancel, and how did the agent respond? Caller context: Customer Luke Adams called to inquire about promotional offers and their applicability to upgrade his upcoming booking at LuxStay Hotels in Miami Beach.",
       "transcript_id": "39c2963d-bc2e-46d8-96ed-173edd451215",
       "task": "task1",
       "expected_evidence_turns": [
@@ -219,7 +219,7 @@
     {
       "question_id": "q012",
       "category": "cancellation",
-      "question": "Why did the customer want to cancel, and how did the agent respond?",
+      "question": "Why did the customer want to cancel, and how did the agent respond? Caller context: Lillian Graham called to report chronic internet slowdowns and inquire about service reliability, potentially evaluating alternatives.",
       "transcript_id": "db770e24-60fe-4a9c-95ba-1ac1830028c3",
       "task": "task1",
       "expected_evidence_turns": [
@@ -235,7 +235,7 @@
     {
       "question_id": "q013",
       "category": "cancellation",
-      "question": "Why did the customer want to cancel, and how did the agent respond?",
+      "question": "Why did the customer want to cancel, and how did the agent respond? Caller context: Inquiry regarding a denied promo code (SUMMER20) and its availability for a booking at Premier Resorts in Las Vegas.",
       "transcript_id": "3c4380da-a6de-474b-a98e-a7a5dfffc3cb",
       "task": "task1",
       "expected_evidence_turns": [
@@ -253,7 +253,7 @@
     {
       "question_id": "q014",
       "category": "cancellation",
-      "question": "Why did the customer want to cancel, and how did the agent respond?",
+      "question": "Why did the customer want to cancel, and how did the agent respond? Caller context: Olivia reached out to discuss chronic slow speed on her internet connection and potential alternatives for better service.",
       "transcript_id": "1962f3c5-e0df-4cda-91a8-ac3c0c19a529",
       "task": "task1",
       "expected_evidence_turns": [
@@ -271,7 +271,7 @@
     {
       "question_id": "q015",
       "category": "cancellation",
-      "question": "Why did the customer want to cancel, and how did the agent respond?",
+      "question": "Why did the customer want to cancel, and how did the agent respond? Caller context: Amelia Hernandez called to inquire about the cancellation policy for her booking at CozyInn in Las Vegas and to explore the potential retention options offered.",
       "transcript_id": "c01a8e7d-3b76-488e-ab90-c886a517df65",
       "task": "task1",
       "expected_evidence_turns": [
@@ -292,7 +292,7 @@
     {
       "question_id": "q016",
       "category": "cancellation",
-      "question": "Why did the customer want to cancel, and how did the agent respond?",
+      "question": "Why did the customer want to cancel, and how did the agent respond? Caller context: Request for a refund due to flight cancellation on Coastal Wings route SEA->ATL.",
       "transcript_id": "c87eed8c-c1ef-4c4c-b3ee-0b22956eb30d",
       "task": "task1",
       "expected_evidence_turns": [
@@ -309,7 +309,7 @@
     {
       "question_id": "q017",
       "category": "booking_error",
-      "question": "What booking problem did the customer report and how did the agent resolve it?",
+      "question": "What booking problem did the customer report and how did the agent resolve it? Caller context: Customer called to resolve a double-booking and a name mismatch issue in their reservation at Urban Escape Los Angeles.",
       "transcript_id": "bf3ad8ba-2822-41ff-b447-2b459c04e00f",
       "task": "task1",
       "expected_evidence_turns": [
@@ -330,7 +330,7 @@
     {
       "question_id": "q018",
       "category": "booking_error",
-      "question": "What booking problem did the customer report and how did the agent resolve it?",
+      "question": "What booking problem did the customer report and how did the agent resolve it? Caller context: Hannah Patel contacted SkyBridge Airlines to discuss compensation options for a flight delay on route MIA->DFW.",
       "transcript_id": "153eef61-06a8-445d-9bfb-f59c01765e2c",
       "task": "task1",
       "expected_evidence_turns": [
@@ -350,7 +350,7 @@
     {
       "question_id": "q019",
       "category": "booking_error",
-      "question": "What booking problem did the customer report and how did the agent resolve it?",
+      "question": "What booking problem did the customer report and how did the agent resolve it? Caller context: Customer Evelyn Brooks called AeroLink to address a significant delay to her BOS->LAX flight and explore rebooking options.",
       "transcript_id": "d2993f5e-9368-4256-b963-5e77a25b75c5",
       "task": "task1",
       "expected_evidence_turns": [
@@ -372,7 +372,7 @@
     {
       "question_id": "q020",
       "category": "booking_error",
-      "question": "What booking problem did the customer report and how did the agent resolve it?",
+      "question": "What booking problem did the customer report and how did the agent resolve it? Caller context: Gabriel contacted AeroLink to address concerns regarding a delay impacting his flight.",
       "transcript_id": "1135f6df-3f1b-450a-91fd-8ac1063778ef",
       "task": "task1",
       "expected_evidence_turns": [
@@ -392,7 +392,7 @@
     {
       "question_id": "q021",
       "category": "booking_error",
-      "question": "What booking problem did the customer report and how did the agent resolve it?",
+      "question": "What booking problem did the customer report and how did the agent resolve it? Caller context: Missed flight connection due to delay and seeking travel insurance claim support.",
       "transcript_id": "77de02cb-3f75-43a6-b7ed-f19e44d2c883",
       "task": "task1",
       "expected_evidence_turns": [
@@ -411,7 +411,7 @@
     {
       "question_id": "q022",
       "category": "booking_error",
-      "question": "What booking problem did the customer report and how did the agent resolve it?",
+      "question": "What booking problem did the customer report and how did the agent resolve it? Caller context: Customer Riley Bell called to discuss refund eligibility for a canceled Nimbus Air flight (MIA->DFW).",
       "transcript_id": "ca665e5b-d0aa-4b55-965a-add5e7c63196",
       "task": "task1",
       "expected_evidence_turns": [
@@ -430,7 +430,7 @@
     {
       "question_id": "q023",
       "category": "booking_error",
-      "question": "What booking problem did the customer report and how did the agent resolve it?",
+      "question": "What booking problem did the customer report and how did the agent resolve it? Caller context: Customer Ava Brooks called AeroLink to resolve a flight delay and discuss rebooking options.",
       "transcript_id": "53363a96-3482-4b5a-9ae4-78e298c073bc",
       "task": "task1",
       "expected_evidence_turns": [
@@ -451,7 +451,7 @@
     {
       "question_id": "q024",
       "category": "booking_error",
-      "question": "What booking problem did the customer report and how did the agent resolve it?",
+      "question": "What booking problem did the customer report and how did the agent resolve it? Caller context: Lucas called to resolve a booking error with his hotel reservation at Premier Resorts.",
       "transcript_id": "a6229e13-c2e2-441d-9dfc-977fee0324cd",
       "task": "task1",
       "expected_evidence_turns": [
@@ -471,7 +471,7 @@
     {
       "question_id": "q025",
       "category": "pricing_dissatisfaction",
-      "question": "Why was the customer unhappy about pricing and what did the agent offer?",
+      "question": "Why was the customer unhappy about pricing and what did the agent offer? Caller context: Customer called to address unexpected charges related to account fees and seek clarification on the bank's policy.",
       "transcript_id": "5d73acfa-c16c-4ed5-9115-6a669f7fa0c8",
       "task": "task1",
       "expected_evidence_turns": [
@@ -490,7 +490,7 @@
     {
       "question_id": "q026",
       "category": "pricing_dissatisfaction",
-      "question": "Why was the customer unhappy about pricing and what did the agent offer?",
+      "question": "Why was the customer unhappy about pricing and what did the agent offer? Caller context: Customer calls to resolve a billing discrepancy encountered during their stay at Premier Resorts in Las Vegas.",
       "transcript_id": "88ab0165-859c-4b99-8fd6-8f502d9d4a30",
       "task": "task1",
       "expected_evidence_turns": [
@@ -509,7 +509,7 @@
     {
       "question_id": "q027",
       "category": "pricing_dissatisfaction",
-      "question": "Why was the customer unhappy about pricing and what did the agent offer?",
+      "question": "Why was the customer unhappy about pricing and what did the agent offer? Caller context: Inquiry about upgrading a Health insurance plan with Acme Insurance.",
       "transcript_id": "a82e3ffe-2294-4c8e-88ba-b7647bee6d54",
       "task": "task1",
       "expected_evidence_turns": [
@@ -528,7 +528,7 @@
     {
       "question_id": "q028",
       "category": "pricing_dissatisfaction",
-      "question": "Why was the customer unhappy about pricing and what did the agent offer?",
+      "question": "Why was the customer unhappy about pricing and what did the agent offer? Caller context: Abigail contacted StreamWave to inquire about retention offers, motivated by dissatisfaction with her current plan cost and competitive promotions.",
       "transcript_id": "434b8c58-bedf-4efb-9c0b-5e064a282abf",
       "task": "task1",
       "expected_evidence_turns": [
@@ -547,7 +547,7 @@
     {
       "question_id": "q029",
       "category": "pricing_dissatisfaction",
-      "question": "Why was the customer unhappy about pricing and what did the agent offer?",
+      "question": "Why was the customer unhappy about pricing and what did the agent offer? Caller context: The customer expressed dissatisfaction with rising premiums and is considering cancellation due to financial constraints.",
       "transcript_id": "9ebdb0c7-bcf2-4d9d-9164-8cd75a971cf8",
       "task": "task1",
       "expected_evidence_turns": [
@@ -566,7 +566,7 @@
     {
       "question_id": "q030",
       "category": "pricing_dissatisfaction",
-      "question": "Why was the customer unhappy about pricing and what did the agent offer?",
+      "question": "Why was the customer unhappy about pricing and what did the agent offer? Caller context: Customer Logan Ward contacted HarborWest to dispute a recently applied fee and express concerns over ongoing charges perceived as excessive.",
       "transcript_id": "00293528-4d00-4418-b33a-bc8e779bcfe2",
       "task": "task1",
       "expected_evidence_turns": [
@@ -585,7 +585,7 @@
     {
       "question_id": "q031",
       "category": "pricing_dissatisfaction",
-      "question": "Why was the customer unhappy about pricing and what did the agent offer?",
+      "question": "Why was the customer unhappy about pricing and what did the agent offer? Caller context: Customer John Brooks called to resolve a billing discrepancy related to his recent stay at the CozyInn in Las Vegas.",
       "transcript_id": "a2feddb3-51ef-4710-b51d-d56c9f646c8e",
       "task": "task1",
       "expected_evidence_turns": [
@@ -604,7 +604,7 @@
     {
       "question_id": "q032",
       "category": "pricing_dissatisfaction",
-      "question": "Why was the customer unhappy about pricing and what did the agent offer?",
+      "question": "Why was the customer unhappy about pricing and what did the agent offer? Caller context: Lucas Clark called to dispute unexpected charges linked to a cashier's check and requested clarification on related policies.",
       "transcript_id": "3a09a101-97c5-42a6-86c1-98285f58ef88",
       "task": "task1",
       "expected_evidence_turns": [
@@ -624,7 +624,7 @@
     {
       "question_id": "q033",
       "category": "plan_comparison",
-      "question": "The customer compared options \u2014 what influenced their decision?",
+      "question": "The customer compared options \u2014 what influenced their decision? Caller context: Levi Watson called to request clarity on MetroJet's refund policy and seek a refund adjustment for a delayed flight.",
       "transcript_id": "ebd92b6d-c9a3-4a73-9ab6-67d57b210f15",
       "task": "task1",
       "expected_evidence_turns": [
@@ -643,7 +643,7 @@
     {
       "question_id": "q034",
       "category": "plan_comparison",
-      "question": "The customer compared options \u2014 what influenced their decision?",
+      "question": "The customer compared options \u2014 what influenced their decision? Caller context: Customer Henry Roberts wanted to compare rewards programs for credit cards to determine if switching could be beneficial.",
       "transcript_id": "cf39baa7-b5d0-488f-b653-fa002f54e2b2",
       "task": "task1",
       "expected_evidence_turns": [
@@ -662,7 +662,7 @@
     {
       "question_id": "q035",
       "category": "plan_comparison",
-      "question": "The customer compared options \u2014 what influenced their decision?",
+      "question": "The customer compared options \u2014 what influenced their decision? Caller context: Inquiry about complaints related to Premium Economy fare class on SkyBridge Airlines and a comparison with competitor policies.",
       "transcript_id": "985efc7a-1647-4295-b2c1-6598bfb7ed11",
       "task": "task1",
       "expected_evidence_turns": [
@@ -682,7 +682,7 @@
     {
       "question_id": "q036",
       "category": "plan_comparison",
-      "question": "The customer compared options \u2014 what influenced their decision?",
+      "question": "The customer compared options \u2014 what influenced their decision? Caller context: Customer called regarding frustration with cancellation fees for last-minute vs advance bookings.",
       "transcript_id": "5452314c-6865-4426-8acb-a6dac2830930",
       "task": "task1",
       "expected_evidence_turns": [
@@ -701,7 +701,7 @@
     {
       "question_id": "q037",
       "category": "plan_comparison",
-      "question": "The customer compared options \u2014 what influenced their decision?",
+      "question": "The customer compared options \u2014 what influenced their decision? Caller context: Price concern over SkyBridge Airlines compared to competitor Delta Airlines while planning BOS->LAX travel.",
       "transcript_id": "b492835d-b220-4493-9b19-14fc4163956a",
       "task": "task1",
       "expected_evidence_turns": [
@@ -720,7 +720,7 @@
     {
       "question_id": "q038",
       "category": "plan_comparison",
-      "question": "The customer compared options \u2014 what influenced their decision?",
+      "question": "The customer compared options \u2014 what influenced their decision? Caller context: Customer wanted to compare Metro Capital's products to competitor options focusing on fees and savings APR rates.",
       "transcript_id": "02a91f45-5863-4dec-97b1-9237a955fac4",
       "task": "task1",
       "expected_evidence_turns": [
@@ -742,7 +742,7 @@
     {
       "question_id": "q039",
       "category": "plan_comparison",
-      "question": "The customer compared options \u2014 what influenced their decision?",
+      "question": "The customer compared options \u2014 what influenced their decision? Caller context: Levi is seeking to compare home insurance policies between Blue Shield and another insurer, MetroHealth, to choose the best option for his needs.",
       "transcript_id": "2bb832e7-14dc-454d-bc6c-cd8488737819",
       "task": "task1",
       "expected_evidence_turns": [
@@ -766,7 +766,7 @@
     {
       "question_id": "q040",
       "category": "plan_comparison",
-      "question": "The customer compared options \u2014 what influenced their decision?",
+      "question": "The customer compared options \u2014 what influenced their decision? Caller context: Customer wants to understand how NorthPeak Financial's insurance product compares to others in terms of benefits and coverage.",
       "transcript_id": "769dcd26-7b35-4fd3-a4c0-2e46484a3cfd",
       "task": "task1",
       "expected_evidence_turns": [
@@ -788,7 +788,7 @@
     {
       "question_id": "q041",
       "category": "upsell",
-      "question": "Did the agent propose an upgrade, and how did the customer react?",
+      "question": "Did the agent propose an upgrade, and how did the customer react? Caller context: Henry called to explore upgrading his FiberOne internet plan while seeking clarification on pricing and features.",
       "transcript_id": "6a12057f-a08a-4f64-ae40-21f45de07a21",
       "task": "task1",
       "expected_evidence_turns": [
@@ -811,7 +811,7 @@
     {
       "question_id": "q042",
       "category": "upsell",
-      "question": "Did the agent propose an upgrade, and how did the customer react?",
+      "question": "Did the agent propose an upgrade, and how did the customer react? Caller context: Customer Jack Torres contacted FiberOne to report a service outage and seek an update on the restoration timeline.",
       "transcript_id": "6ddcd557-47e3-4417-8ace-65d462544d1a",
       "task": "task1",
       "expected_evidence_turns": [
@@ -829,7 +829,7 @@
     {
       "question_id": "q043",
       "category": "upsell",
-      "question": "Did the agent propose an upgrade, and how did the customer react?",
+      "question": "Did the agent propose an upgrade, and how did the customer react? Caller context: Customer Owen Bell called to report slow internet speeds and discuss possible service solutions.",
       "transcript_id": "113f1f86-ddb6-422a-8ec4-c470051741bf",
       "task": "task1",
       "expected_evidence_turns": [
@@ -850,7 +850,7 @@
     {
       "question_id": "q044",
       "category": "upsell",
-      "question": "Did the agent propose an upgrade, and how did the customer react?",
+      "question": "Did the agent propose an upgrade, and how did the customer react? Caller context: Hannah called to seek clarification about the refund policy on her recent booking with SkyBridge Airlines.",
       "transcript_id": "9f2a078c-5a02-4abb-ba5b-486ae275d08e",
       "task": "task1",
       "expected_evidence_turns": [
@@ -868,7 +868,7 @@
     {
       "question_id": "q045",
       "category": "upsell",
-      "question": "Did the agent propose an upgrade, and how did the customer react?",
+      "question": "Did the agent propose an upgrade, and how did the customer react? Caller context: Customer called to address frequent disruptions in connectivity, impacting work and entertainment activities.",
       "transcript_id": "103422fb-45b7-4b62-847e-387494b6273a",
       "task": "task1",
       "expected_evidence_turns": [
@@ -886,7 +886,7 @@
     {
       "question_id": "q046",
       "category": "upsell",
-      "question": "Did the agent propose an upgrade, and how did the customer react?",
+      "question": "Did the agent propose an upgrade, and how did the customer react? Caller context: Inquiry about new features and service improvements, particularly better router options.",
       "transcript_id": "3174f942-c8da-4ee9-acd9-df7a9c2bde36",
       "task": "task1",
       "expected_evidence_turns": [
@@ -906,7 +906,7 @@
     {
       "question_id": "q047",
       "category": "upsell",
-      "question": "Did the agent propose an upgrade, and how did the customer react?",
+      "question": "Did the agent propose an upgrade, and how did the customer react? Caller context: Harper called to explore upgrade options for her current reservation at CozyInn in Las Vegas.",
       "transcript_id": "f1414b3b-b4a8-4323-a70d-7fc300093811",
       "task": "task1",
       "expected_evidence_turns": [
@@ -928,7 +928,7 @@
     {
       "question_id": "q048",
       "category": "upsell",
-      "question": "Did the agent propose an upgrade, and how did the customer react?",
+      "question": "Did the agent propose an upgrade, and how did the customer react? Caller context: Customer Emma Long is inquiring about possible service plan upgrades and value comparisons with competitors.",
       "transcript_id": "c6129eb3-dc28-46a1-a9ca-c730ec5bdd01",
       "task": "task1",
       "expected_evidence_turns": [
@@ -949,7 +949,7 @@
     {
       "question_id": "q049",
       "category": "product_defect",
-      "question": "What defect did the customer report, and what resolution was offered?",
+      "question": "What defect did the customer report, and what resolution was offered? Caller context: Customer reported receiving a damaged item and inquired about return policies.",
       "transcript_id": "47df0dd1-5329-43c2-ad05-e7aefaab21a2",
       "task": "task1",
       "expected_evidence_turns": [
@@ -973,7 +973,7 @@
     {
       "question_id": "q050",
       "category": "product_defect",
-      "question": "What defect did the customer report, and what resolution was offered?",
+      "question": "What defect did the customer report, and what resolution was offered? Caller context: Customer Madison Long raised concerns about room cleanliness and missing amenities during her stay at the Urban Escape hotel in New York City.",
       "transcript_id": "b3e30057-d850-4b67-9b42-5b81e25c3afc",
       "task": "task1",
       "expected_evidence_turns": [
@@ -992,7 +992,7 @@
     {
       "question_id": "q051",
       "category": "product_defect",
-      "question": "What defect did the customer report, and what resolution was offered?",
+      "question": "What defect did the customer report, and what resolution was offered? Caller context: Joseph Ward called to report receiving a damaged item purchased from ShopSquare.",
       "transcript_id": "d5beef81-96fd-4293-8594-c403c453d8a6",
       "task": "task1",
       "expected_evidence_turns": [
@@ -1014,7 +1014,7 @@
     {
       "question_id": "q052",
       "category": "product_defect",
-      "question": "What defect did the customer report, and what resolution was offered?",
+      "question": "What defect did the customer report, and what resolution was offered? Caller context: Customer called to request resolution for a defective item received from UrbanCart.",
       "transcript_id": "d27fd0dc-03cc-4115-b618-0c672f8716c2",
       "task": "task1",
       "expected_evidence_turns": [
@@ -1036,7 +1036,7 @@
     {
       "question_id": "q053",
       "category": "product_defect",
-      "question": "What defect did the customer report, and what resolution was offered?",
+      "question": "What defect did the customer report, and what resolution was offered? Caller context: Riley Graham called to report receiving a damaged product from HomeHaven and discuss the return process.",
       "transcript_id": "2de9197a-f190-4f01-ac33-b72f0489fe48",
       "task": "task1",
       "expected_evidence_turns": [
@@ -1057,7 +1057,7 @@
     {
       "question_id": "q054",
       "category": "product_defect",
-      "question": "What defect did the customer report, and what resolution was offered?",
+      "question": "What defect did the customer report, and what resolution was offered? Caller context: Customer called to resolve a discount code issue on their hotel booking at Urban Escape in Chicago.",
       "transcript_id": "a6a1608b-6466-4030-9733-3a411755e131",
       "task": "task1",
       "expected_evidence_turns": [
@@ -1076,7 +1076,7 @@
     {
       "question_id": "q055",
       "category": "product_defect",
-      "question": "What defect did the customer report, and what resolution was offered?",
+      "question": "What defect did the customer report, and what resolution was offered? Caller context: Customer Elijah Ramirez called to report frequent connectivity issues and seek resolution or plan clarification.",
       "transcript_id": "5748f3a5-27de-40d0-923f-a1603febbe29",
       "task": "task1",
       "expected_evidence_turns": [
@@ -1095,7 +1095,7 @@
     {
       "question_id": "q056",
       "category": "product_defect",
-      "question": "What defect did the customer report, and what resolution was offered?",
+      "question": "What defect did the customer report, and what resolution was offered? Caller context: Customer reported a damaged product and sought resolution through replacement or refund.",
       "transcript_id": "cf4d693b-b8bf-4cfd-981f-9fc34b32c357",
       "task": "task1",
       "expected_evidence_turns": [
@@ -1116,7 +1116,7 @@
     {
       "question_id": "q057",
       "category": "service_complaint",
-      "question": "What service issue did the customer complain about, and how was it handled?",
+      "question": "What service issue did the customer complain about, and how was it handled? Caller context: Customer Mia Patel called to investigate whether her Platinum loyalty status could expedite issue resolutions for recent flight inconveniences.",
       "transcript_id": "47ee641d-c29a-4854-ac6e-273edd1d3d69",
       "task": "task1",
       "expected_evidence_turns": [
@@ -1135,7 +1135,7 @@
     {
       "question_id": "q058",
       "category": "service_complaint",
-      "question": "What service issue did the customer complain about, and how was it handled?",
+      "question": "What service issue did the customer complain about, and how was it handled? Caller context: Customer Harper Perez called to report Wi-Fi signal disconnects occurring intermittently.",
       "transcript_id": "927c726a-58f0-40d5-8464-63dae7597402",
       "task": "task1",
       "expected_evidence_turns": [
@@ -1154,7 +1154,7 @@
     {
       "question_id": "q059",
       "category": "service_complaint",
-      "question": "What service issue did the customer complain about, and how was it handled?",
+      "question": "What service issue did the customer complain about, and how was it handled? Caller context: Customer called to address frustration over a late delivery from ShopSquare.",
       "transcript_id": "fb7388d0-0b23-4e01-822e-71e5f55264ea",
       "task": "task1",
       "expected_evidence_turns": [
@@ -1173,7 +1173,7 @@
     {
       "question_id": "q060",
       "category": "service_complaint",
-      "question": "What service issue did the customer complain about, and how was it handled?",
+      "question": "What service issue did the customer complain about, and how was it handled? Caller context: Inquiry about fare changes and dissatisfaction with pricing policies compared to competitors.",
       "transcript_id": "44b0839b-e556-44d8-b543-c83e822db4c0",
       "task": "task1",
       "expected_evidence_turns": [
@@ -1192,7 +1192,7 @@
     {
       "question_id": "q061",
       "category": "service_complaint",
-      "question": "What service issue did the customer complain about, and how was it handled?",
+      "question": "What service issue did the customer complain about, and how was it handled? Caller context: Logan Morgan reached out to address a concern regarding a sizing issue with a recently returned item.",
       "transcript_id": "efeab8a4-eaa0-4582-95af-623f03bec4c4",
       "task": "task1",
       "expected_evidence_turns": [
@@ -1211,7 +1211,7 @@
     {
       "question_id": "q062",
       "category": "service_complaint",
-      "question": "What service issue did the customer complain about, and how was it handled?",
+      "question": "What service issue did the customer complain about, and how was it handled? Caller context: Customer Noah Kelly expressed dissatisfaction with current policy benefits and explored retention options.",
       "transcript_id": "5fb7681d-d7f1-4e2e-81e6-917829b22e69",
       "task": "task1",
       "expected_evidence_turns": [
@@ -1232,7 +1232,7 @@
     {
       "question_id": "q063",
       "category": "service_complaint",
-      "question": "What service issue did the customer complain about, and how was it handled?",
+      "question": "What service issue did the customer complain about, and how was it handled? Caller context: Customer seeks clarification on refund rules for an unused ticket, expressing dissatisfaction with policy restrictions.",
       "transcript_id": "61b5791b-331c-47d5-86fd-c632c85b20b3",
       "task": "task1",
       "expected_evidence_turns": [
@@ -1251,7 +1251,7 @@
     {
       "question_id": "q064",
       "category": "service_complaint",
-      "question": "What service issue did the customer complain about, and how was it handled?",
+      "question": "What service issue did the customer complain about, and how was it handled? Caller context: Customer Ava Perez called to report a booking error at Urban Escape in Chicago and discuss possible resolution options.",
       "transcript_id": "a869edf9-1899-492b-b0c3-5e30d5036d41",
       "task": "task1",
       "expected_evidence_turns": [

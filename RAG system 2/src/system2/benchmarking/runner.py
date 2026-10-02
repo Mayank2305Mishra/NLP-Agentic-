@@ -3,13 +3,17 @@ from __future__ import annotations
 import json
 import logging
 import statistics
+import subprocess
+import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from ..config import Config
+from ..config import Config, PROJECT_ROOT
+from ..llm import LLMClient
 from ..pipeline import Pipeline
+from ..prompts import PROMPT_VERSION
 from .fixture import load_fixture
 
 log = logging.getLogger("system2.benchmark")
@@ -38,6 +42,59 @@ def _mean(values: list[float]) -> float | None:
     return round(statistics.mean(values), 4) if values else None
 
 
+def _git_commit() -> str | None:
+    try:
+        out = subprocess.run(
+            ["git", "rev-parse", "--short", "HEAD"],
+            cwd=PROJECT_ROOT,
+            capture_output=True,
+            text=True,
+            timeout=5,
+        )
+        return out.stdout.strip() or None
+    except (OSError, subprocess.SubprocessError):
+        return None
+
+
+def _index_fingerprint(config: Config) -> dict[str, Any] | None:
+    """Index hash + operational stats for §28.1/§32 reporting."""
+    db_path = config.dataset.db_path
+    if not db_path.exists():
+        return None
+    import hashlib
+
+    digest = hashlib.sha256()
+    with open(db_path, "rb") as fh:
+        for chunk in iter(lambda: fh.read(1 << 20), b""):
+            digest.update(chunk)
+    stats_path = db_path.parent / "index_stats.json"
+    build: dict[str, Any] = {}
+    if stats_path.exists():
+        try:
+            build = json.loads(stats_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            build = {}
+    return {
+        "index_hash": digest.hexdigest(),
+        "index_size_bytes": db_path.stat().st_size,
+        "index_build_seconds": build.get("build_seconds"),
+        "index_conversations": build.get("conversations"),
+        "index_turns": build.get("turns"),
+    }
+
+
+def _peak_rss_mb() -> float | None:
+    try:
+        import resource
+
+        rss = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+        # macOS reports bytes, Linux reports kilobytes.
+        divisor = 1 << 20 if sys.platform == "darwin" else 1 << 10
+        return round(rss / divisor, 2)
+    except (ImportError, OSError, ValueError):
+        return None
+
+
 def _latency_summary(values: list[float]) -> dict[str, Any]:
     return {
         "mean_ms": _mean(values),
@@ -53,12 +110,16 @@ def run_benchmark(
     use_llm: bool = True,
     limit: int | None = None,
     ablation: str | None = None,
+    output_dir: str | Path | None = None,
+    client: LLMClient | None = None,
 ) -> dict[str, Any]:
     if ablation:
         config.ablation = {"mode": ablation}
     fixture = load_fixture(config, fixture_path)
     questions = fixture["questions"][:limit] if limit else fixture["questions"]
-    pipeline = Pipeline(config)
+    cold_start = time.perf_counter()
+    pipeline = Pipeline(config, client=client)
+    cold_start_ms = round((time.perf_counter() - cold_start) * 1000, 3)
 
     rows: list[dict[str, Any]] = []
     retrieval_ms: list[float] = []
@@ -126,11 +187,41 @@ def run_benchmark(
                 "retrieval_ms": round(r_ms, 3),
                 "generation_ms": round(g_ms, 3),
                 "total_ms": round(t_ms, 3),
+                "input_tokens": outcome.get("input_tokens"),
+                "output_tokens": outcome.get("output_tokens"),
+                "input_tokens_per_second": outcome.get("input_tokens_per_second"),
+                "output_tokens_per_second": outcome.get("output_tokens_per_second"),
                 "errors": outcome.get("errors", []),
             }
         )
 
     summary = _summarize(rows, retrieval_ms, generation_ms, total_ms, use_llm)
+    summary["operational"] = {
+        "cold_start_ms": cold_start_ms,
+        "peak_rss_mb": _peak_rss_mb(),
+        **(_index_fingerprint(config) or {}),
+    }
+    if use_llm:
+        output_tps = [
+            r["output_tokens_per_second"]
+            for r in rows
+            if r.get("output_tokens_per_second") is not None
+        ]
+        input_tps = [
+            r["input_tokens_per_second"]
+            for r in rows
+            if r.get("input_tokens_per_second") is not None
+        ]
+        summary["tokens"] = {
+            "input_tokens_mean": _mean(
+                [r["input_tokens"] for r in rows if r.get("input_tokens") is not None]
+            ),
+            "output_tokens_mean": _mean(
+                [r["output_tokens"] for r in rows if r.get("output_tokens") is not None]
+            ),
+            "input_tokens_per_second_mean": _mean(input_tps),
+            "output_tokens_per_second_mean": _mean(output_tps),
+        }
     result = {
         "summary": summary,
         "rows": rows,
@@ -140,6 +231,8 @@ def run_benchmark(
             "fixture_seed": fixture.get("seed"),
             "source_hash": fixture.get("source_hash"),
             "config_hash": config.config_hash,
+            "git_commit": _git_commit(),
+            "prompt_version": PROMPT_VERSION,
             "dataset_population": "index",
             "sample_seed": config.dataset.sample_seed,
             "model": config.generation.model,
@@ -150,7 +243,7 @@ def run_benchmark(
             "question_count": len(questions),
         },
     }
-    _save(config, result)
+    _save(config, result, output_dir)
     return result
 
 
@@ -197,6 +290,10 @@ def _run_question(pipeline: Pipeline, question: dict[str, Any], use_llm: bool) -
         "contamination": result.grounding.get("contamination", False),
         "insufficient_evidence": bool(answer.get("insufficient_evidence")),
         "unsupported_claim_rate": round(len(unsupported) / claim_count, 4) if claim_count else 0.0,
+        "input_tokens": result.tokens.get("input_tokens"),
+        "output_tokens": result.tokens.get("output_tokens"),
+        "input_tokens_per_second": result.tokens.get("input_tokens_per_second"),
+        "output_tokens_per_second": result.tokens.get("output_tokens_per_second"),
         "errors": result.errors,
     }
 
@@ -260,8 +357,8 @@ def _summarize(
     return summary
 
 
-def _save(config: Config, result: dict[str, Any]) -> Path:
-    out_dir = Path(__file__).resolve().parents[3] / "benchmarks" / "results"
+def _save(config: Config, result: dict[str, Any], output_dir: str | Path | None = None) -> Path:
+    out_dir = Path(output_dir) if output_dir else PROJECT_ROOT / "benchmarks" / "results"
     out_dir.mkdir(parents=True, exist_ok=True)
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     mode = (config.ablation or {}).get("mode", "full")

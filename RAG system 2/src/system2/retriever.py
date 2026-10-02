@@ -122,7 +122,9 @@ class Retriever:
 
         intent_filter = (
             plan.explicit_intent
-            if cfg.hard_filter_on_explicit_intent and settings.metadata
+            if cfg.hard_filter_on_explicit_intent
+            and settings.metadata
+            and plan.intent_match == "verbatim"
             else None
         )
         if intent_filter:
@@ -130,6 +132,12 @@ class Retriever:
                 "APPLY_METADATA_FILTER",
                 f"explicit intent constraint: {intent_filter}",
                 hard=True,
+            )
+        elif plan.explicit_intent and settings.metadata:
+            decisions.record(
+                "APPLY_METADATA_FILTER",
+                f"inferred intent hint (soft boost only): {plan.explicit_intent}",
+                hard=False,
             )
 
         with timer.stage("metadata_filter_ms"):

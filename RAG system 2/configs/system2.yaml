@@ -22,12 +22,13 @@ retrieval:
   hard_filter_on_explicit_intent: true
   causal_scoring: true
   include_post_call: false
+  # Calibrated on the fixture benchmark per spec §10 (sum = 1.00).
   weights:
-    bm25: 0.70
-    metadata: 0.10
-    phrase: 0.08
-    causal: 0.07
-    outcome: 0.05
+    bm25: 0.85
+    metadata: 0.05
+    phrase: 0.05
+    causal: 0.02
+    outcome: 0.03
 
 evidence:
   task1_max_tokens: 1500

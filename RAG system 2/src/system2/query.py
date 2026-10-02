@@ -31,6 +31,18 @@ _COMPARISON_RE = re.compile(
     r"conversations|multiple conversations|different customers)\b",
     re.IGNORECASE,
 )
+# Cross-conversation comparison only (spec §18/§21): a question about one customer
+# "comparing options" must NOT widen the evidence pack to unrelated transcripts.
+_CROSS_CONVERSATION_RE = re.compile(
+    r"\b(?:across|between|among|from)\s+(?:all\s+|each\s+|the\s+)*conversations?\b"
+    r"|\b(?:multiple|several|different|other|both|two|all)\s+conversations?\b"
+    r"|\b(?:multiple|several|different|other|both)\s+customers\b"
+    r"|\b(?:compare|comparing|comparison|versus|vs\.?)\b[^.?!]{0,60}"
+    r"\b(?:conversations?|calls?|transcripts?)\b"
+    r"|\b(?:conversations?|calls?|transcripts?)\b[^.?!]{0,20}"
+    r"\b(?:compare|comparison|versus)\b",
+    re.IGNORECASE,
+)
 _TASK2_RE = re.compile(
     r"\b(summar(y|ise|ize)|summarize the|entire (call|conversation)|whole (call|conversation)"
     r"|end to end|walk through|causal chain|timeline|chronolog\w*|story of|narrative)\b",
@@ -50,7 +62,8 @@ def classify_task(raw_query: str) -> str:
 
 
 def detect_comparison(raw_query: str) -> bool:
-    return bool(_COMPARISON_RE.search(raw_query))
+    """True only for explicit cross-conversation comparison requests (spec §18/§21)."""
+    return bool(_CROSS_CONVERSATION_RE.search(raw_query))
 
 
 class QueryProcessor:
@@ -88,7 +101,7 @@ class QueryProcessor:
                 expanded.extend(SYNONYM_MAP.get(term, []))
         expanded = sorted(set(expanded) - set(retrieval_terms))
 
-        explicit_intent, metadata_hints = self._metadata(all_content, normalized)
+        explicit_intent, metadata_hints, intent_match = self._metadata(all_content, normalized)
 
         strict_terms = [
             t
@@ -114,6 +127,7 @@ class QueryProcessor:
             expanded_terms=expanded,
             metadata_hints=metadata_hints,
             explicit_intent=explicit_intent,
+            intent_match=intent_match,
             task=detected,
             comparison=detect_comparison(raw_query),
             fts_match=strict_match,
@@ -132,16 +146,31 @@ class QueryProcessor:
             return True
         return False
 
-    def _metadata(self, terms: list[str], normalized: str) -> tuple[str | None, dict]:
+    def _metadata(
+        self, terms: list[str], normalized: str
+    ) -> tuple[str | None, dict, str | None]:
+        """Return (explicit_intent, hints, match_kind).
+
+        match_kind is "verbatim" only when the full intent name appears in the query
+        (spec §9.1: exact explicit constraint → hard filter); token-level matches are
+        "token" and may only soft-boost (spec §9.1: inferred hint → soft boost).
+        """
         hints: dict = {}
         explicit: str | None = None
+        match_kind: str | None = None
         for original, norm in self.intents:
             if norm and (norm in normalized or norm.replace(" ", "") in normalized.replace(" ", "")):
                 explicit = original
                 hints["intent"] = original
+                match_kind = "verbatim"
                 break
         if explicit is None:
             for term in terms:
+                # Generic role/stop/low-value words ("customer", "call", …) must not
+                # infer an intent: matching "customer" to "Customer trust" would turn
+                # a guessed hint into a recall-killing hard filter.
+                if term in ROLE_WORDS or term in STOPWORDISH or term in LOW_VALUE_TERMS:
+                    continue
                 for original, norm in self.intents:
                     intent_tokens = norm.split()
                     if self._token_match(term, norm) or any(
@@ -149,6 +178,7 @@ class QueryProcessor:
                     ):
                         explicit = original
                         hints["intent"] = original
+                        match_kind = "token"
                         break
                 if explicit:
                     break
@@ -158,7 +188,7 @@ class QueryProcessor:
         month = _MONTH_RE.search(normalized)
         if month:
             hints["month"] = month.group(1)
-        return explicit, hints
+        return explicit, hints, match_kind
 
 
 STOPWORDISH = frozenset(

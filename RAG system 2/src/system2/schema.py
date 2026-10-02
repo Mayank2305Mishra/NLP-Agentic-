@@ -49,7 +49,8 @@ class QueryPlan:
     expanded_terms: list[str]
     metadata_hints: dict[str, Any]
     explicit_intent: str | None
-    task: str
+    intent_match: str | None = None
+    task: str = "task1"
     comparison: bool = False
     fts_match: str = ""
     fts_match_loose: str = ""

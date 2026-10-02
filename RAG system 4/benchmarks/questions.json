@@ -1,0 +1,398 @@
+[
+  {
+    "id": "direct-01",
+    "category": "direct_causal",
+    "task": "task1",
+    "query": "Customer Owen Bennett reported a delayed flight and sought clarity on the cause and potential compensation options.",
+    "query_hash": "b0aef1a91edc1391",
+    "transcript_id": "9b8fcadb-3121-449c-8dd0-c1e0c2cc2f9a",
+    "answerable": true,
+    "expected_turns": [
+      7
+    ]
+  },
+  {
+    "id": "direct-02",
+    "category": "direct_causal",
+    "task": "task1",
+    "query": "Jane Bennett called to report a booking error involving a reservation at Beachfront Suites in Chicago.",
+    "query_hash": "d697318c364acc5d",
+    "transcript_id": "0aa3025d-2034-40c3-8a2d-1b75f0ef072c",
+    "answerable": true,
+    "expected_turns": []
+  },
+  {
+    "id": "direct-03",
+    "category": "direct_causal",
+    "task": "task1",
+    "query": "Customer noticed suspicious activity on their account and sought clarification and resolution.",
+    "query_hash": "bb6b202550291a85",
+    "transcript_id": "3a6d9744-9bb3-4c00-bd3e-d98047200716",
+    "answerable": true,
+    "expected_turns": []
+  },
+  {
+    "id": "direct-04",
+    "category": "direct_causal",
+    "task": "task1",
+    "query": "Customer requested assistance with a product return due to a size fit issue.",
+    "query_hash": "75cb42c3fdde1005",
+    "transcript_id": "23b74938-cbc0-4c29-a294-b21e79759612",
+    "answerable": true,
+    "expected_turns": [
+      7,
+      8,
+      9,
+      18,
+      19,
+      27
+    ]
+  },
+  {
+    "id": "direct-05",
+    "category": "direct_causal",
+    "task": "task1",
+    "query": "Addison Brooks called to inquire about upgrading her auto insurance policy and understanding coverage options.",
+    "query_hash": "7bf1426118c00405",
+    "transcript_id": "33e03f91-9c45-4df4-aac5-ec4cc639640d",
+    "answerable": true,
+    "expected_turns": []
+  },
+  {
+    "id": "direct-06",
+    "category": "direct_causal",
+    "task": "task1",
+    "query": "Ava called to express dissatisfaction with the cleanliness of her room during her recent stay at Beachfront Suites.",
+    "query_hash": "95124412b897b554",
+    "transcript_id": "7efbed3c-1afc-45a4-af54-f5d872d6ae59",
+    "answerable": true,
+    "expected_turns": [
+      2
+    ]
+  },
+  {
+    "id": "direct-07",
+    "category": "direct_causal",
+    "task": "task1",
+    "query": "Customer Carter Parker wanted to discuss new service features offered by FiberOne related to insurance policy upgrades.",
+    "query_hash": "2770a98c9fc621ef",
+    "transcript_id": "1ee1163a-67cb-42a6-b2f2-96b44c0399ce",
+    "answerable": true,
+    "expected_turns": []
+  },
+  {
+    "id": "direct-08",
+    "category": "direct_causal",
+    "task": "task1",
+    "query": "Natalie Long called to inquire about cancelling her reservation at CozyInn Miami Beach due to concerns over pricing.",
+    "query_hash": "2ec7450edf766f11",
+    "transcript_id": "4e0d5c76-eb4d-4504-8e77-d7b842ef3abd",
+    "answerable": true,
+    "expected_turns": []
+  },
+  {
+    "id": "multiturn-01",
+    "category": "multi_turn_causal",
+    "task": "task2",
+    "query": "Summarize the causal chain of this interaction end to end: Customer Noah Johnson called Civic Trust to understand the process and fees involved in a personal loan application after finding pre-qualification was unavailable.",
+    "query_hash": "c35348983c4e0bad",
+    "transcript_id": "c85332fd-3458-4693-850b-5420e8f5b8fb",
+    "answerable": true,
+    "expected_turns": []
+  },
+  {
+    "id": "multiturn-02",
+    "category": "multi_turn_causal",
+    "task": "task2",
+    "query": "Summarize the causal chain of this interaction end to end: Hannah Ward called to discuss health policy renewal and understand available incentives for continuation.",
+    "query_hash": "ae1e2c0ea9ec182d",
+    "transcript_id": "db8033de-55cb-4c67-8e4c-52610fdf953c",
+    "answerable": true,
+    "expected_turns": []
+  },
+  {
+    "id": "multiturn-03",
+    "category": "multi_turn_causal",
+    "task": "task2",
+    "query": "Summarize the causal chain of this interaction end to end: Mark Murphy reached out to clarify his refund eligibility timeline and address concerns about escalation procedures for past claims.",
+    "query_hash": "c96ee0d7d1ea64f2",
+    "transcript_id": "5fc4b0e1-5ad1-4717-bf0e-8f405742b06e",
+    "answerable": true,
+    "expected_turns": [
+      2,
+      12,
+      25
+    ]
+  },
+  {
+    "id": "multiturn-04",
+    "category": "multi_turn_causal",
+    "task": "task2",
+    "query": "Summarize the causal chain of this interaction end to end: Customer Ava Davis is requesting a room upgrade at Beachfront Suites.",
+    "query_hash": "07543251976b10d1",
+    "transcript_id": "ddc7f37d-d51d-438a-8d23-9076d30f6ad5",
+    "answerable": true,
+    "expected_turns": []
+  },
+  {
+    "id": "multiturn-05",
+    "category": "multi_turn_causal",
+    "task": "task2",
+    "query": "Summarize the causal chain of this interaction end to end: Emma Kelly called to request an increase to her credit limit on her Civic Trust account, citing promotional offers from competitor banks.",
+    "query_hash": "2861e072c6aabb1f",
+    "transcript_id": "2a579542-6b4f-4dbc-94b4-9ee310ce472b",
+    "answerable": true,
+    "expected_turns": [
+      11
+    ]
+  },
+  {
+    "id": "action-01",
+    "category": "agent_action",
+    "task": "task1",
+    "query": "What did the agent do to resolve this and why: Customer Mia Sanders called to provide product feedback, focusing on effective feedback channels and overall experience.",
+    "query_hash": "8281bbbc08e4e4b8",
+    "transcript_id": "176bbab4-4832-4214-a739-36379ba20b2e",
+    "answerable": true,
+    "expected_turns": [
+      19
+    ]
+  },
+  {
+    "id": "action-02",
+    "category": "agent_action",
+    "task": "task1",
+    "query": "What did the agent do to resolve this and why: Customer Harper Graham called to explore potential plan upgrades and clarifications regarding home insurance.",
+    "query_hash": "4430ec3a9ab06e7d",
+    "transcript_id": "8f117dd1-c7be-4ba6-a9b0-a4fc71f74522",
+    "answerable": true,
+    "expected_turns": []
+  },
+  {
+    "id": "action-03",
+    "category": "agent_action",
+    "task": "task1",
+    "query": "What did the agent do to resolve this and why: Customer called to inquire about promotions and applicable discounts for their upcoming stay at LuxStay Hotels in Chicago.",
+    "query_hash": "db87eb7893d06e67",
+    "transcript_id": "cc348d56-fd47-4586-9641-e7f6b874a15b",
+    "answerable": true,
+    "expected_turns": []
+  },
+  {
+    "id": "action-04",
+    "category": "agent_action",
+    "task": "task1",
+    "query": "What did the agent do to resolve this and why: Customer Noah Morgan called StreamWave support to resolve interference disrupting internet connectivity.",
+    "query_hash": "81fe4547c4ed5273",
+    "transcript_id": "5a5276a8-453a-464d-a6c1-98d93f9341b5",
+    "answerable": true,
+    "expected_turns": [
+      2
+    ]
+  },
+  {
+    "id": "action-05",
+    "category": "agent_action",
+    "task": "task1",
+    "query": "What did the agent do to resolve this and why: Discuss rebooking options due to a mechanical delay impacting flight SEA->ATL with Nimbus Air.",
+    "query_hash": "a9ffebc37a49c2a6",
+    "transcript_id": "1e4e7da8-c2c7-445c-9e10-15047b90e467",
+    "answerable": true,
+    "expected_turns": [
+      5,
+      6,
+      11
+    ]
+  },
+  {
+    "id": "outcome-01",
+    "category": "outcome",
+    "task": "task1",
+    "query": "What was the outcome of this call: The customer called to understand specific features of her Life insurance policy with Kaiser Plus and clarify renewal options.",
+    "query_hash": "fc8d63318ba0eb0b",
+    "transcript_id": "6292d4ed-92f4-4716-9f79-8881fb0ecb83",
+    "answerable": true,
+    "expected_turns": []
+  },
+  {
+    "id": "outcome-02",
+    "category": "outcome",
+    "task": "task1",
+    "query": "What was the outcome of this call: David Graham called to dispute and seek clarity on fee discrepancies charged to his Metro Capital checking account.",
+    "query_hash": "5741ce42a845780e",
+    "transcript_id": "19e8a053-330f-4e58-8b80-681b1a999ff2",
+    "answerable": true,
+    "expected_turns": [
+      2
+    ]
+  },
+  {
+    "id": "outcome-03",
+    "category": "outcome",
+    "task": "task1",
+    "query": "What was the outcome of this call: Sophia Wright called to clarify if her loyalty tier influences resolution speed for insurance claims under UrbanCart's loyalty program.",
+    "query_hash": "3949045fbbc94dcf",
+    "transcript_id": "b268d3db-e9a0-4880-9710-48e3287f3077",
+    "answerable": true,
+    "expected_turns": []
+  },
+  {
+    "id": "outcome-04",
+    "category": "outcome",
+    "task": "task1",
+    "query": "What was the outcome of this call: Customer Mia Patel called to explore options for upgrading her insurance plan and to inquire about pricing and coverage specifics.",
+    "query_hash": "e78fdea28499574b",
+    "transcript_id": "104af9be-a5ae-41de-b030-0590c530a2bb",
+    "answerable": true,
+    "expected_turns": []
+  },
+  {
+    "id": "outcome-05",
+    "category": "outcome",
+    "task": "task1",
+    "query": "What was the outcome of this call: Inquiry about a fare adjustment for SkyBridge Airlines flight SEA->ATL due to recent changes in pricing.",
+    "query_hash": "df4db69e0fc20cfb",
+    "transcript_id": "55654ede-6051-4c97-9a2a-9b16083d2f8a",
+    "answerable": true,
+    "expected_turns": [
+      5
+    ]
+  },
+  {
+    "id": "similar-01",
+    "category": "similar_terminology",
+    "task": "task1",
+    "query": "Why did the customer contact support about cross-brand mentions?",
+    "query_hash": "3ffed8ff64b7d633",
+    "transcript_id": "34f1aaa6-c3d7-47fc-a641-a25f4ca05c06",
+    "answerable": true,
+    "expected_turns": []
+  },
+  {
+    "id": "similar-02",
+    "category": "similar_terminology",
+    "task": "task1",
+    "query": "Why did the customer contact support about replacement vs refund?",
+    "query_hash": "aed98a63c07f4025",
+    "transcript_id": "11b4e1c3-4d50-478c-8e61-65e63636e21e",
+    "answerable": true,
+    "expected_turns": []
+  },
+  {
+    "id": "similar-03",
+    "category": "similar_terminology",
+    "task": "task1",
+    "query": "Why did the customer contact support about network outages?",
+    "query_hash": "d63aa195357ae44e",
+    "transcript_id": "28698ccf-a9f1-4c4d-aad6-79879220a127",
+    "answerable": true,
+    "expected_turns": []
+  },
+  {
+    "id": "similar-04",
+    "category": "similar_terminology",
+    "task": "task1",
+    "query": "Why did the customer contact support about churn prediction?",
+    "query_hash": "e212d9eebe229381",
+    "transcript_id": "343b8d7f-5ea4-49fa-b7fa-93b3d0988ce8",
+    "answerable": true,
+    "expected_turns": []
+  },
+  {
+    "id": "adversarial-01",
+    "category": "adversarial_distractor",
+    "task": "task1",
+    "query": "Jane called to inquire about the delay in receiving a refund for a disputed transaction. Also determine whether this involved: amenities angeles cleanliness complaints contacted during hotels los luxstay missing natalie recent regarding report stay.",
+    "query_hash": "3ceba08e2f26ec82",
+    "transcript_id": "3d9c2f42-a83e-47df-aa63-3aee307755dd",
+    "answerable": true,
+    "expected_turns": [
+      2,
+      6,
+      13,
+      25
+    ]
+  },
+  {
+    "id": "adversarial-02",
+    "category": "adversarial_distractor",
+    "task": "task1",
+    "query": "Wyatt was looking to upgrade his health insurance plan to access better coverage and specialized care options. Also determine whether this involved: after airlines alternative clarity customer dissatisfied escalation flight outcome refund seeking skybridge supervisor.",
+    "query_hash": "60990273b75b576b",
+    "transcript_id": "bfb0d0ca-f488-434e-863c-efb08d3fa82c",
+    "answerable": true,
+    "expected_turns": []
+  },
+  {
+    "id": "adversarial-03",
+    "category": "adversarial_distractor",
+    "task": "task1",
+    "query": "Riley called to report frequent drops and reliability issues with their UrbanLink internet service. Also determine whether this involved: assistance customer delayed issue reported resolving shipment sought.",
+    "query_hash": "1ebb5f34e4203284",
+    "transcript_id": "c875a377-ccfb-4453-8753-fc6c12870e1b",
+    "answerable": true,
+    "expected_turns": [
+      2
+    ]
+  },
+  {
+    "id": "adversarial-04",
+    "category": "adversarial_distractor",
+    "task": "task1",
+    "query": "Jane Watson is inquiring about pricing details and benefits of AetnaCare's home insurance plan versus MetroHealth, seeking better deductibles and coverage limits. Also determine whether this involved: called check communicated customer delayed ensure escalation refund require status timelines would.",
+    "query_hash": "d5306f789cc0b1a8",
+    "transcript_id": "2f1ba783-95f9-4f10-8872-f1047fc36980",
+    "answerable": true,
+    "expected_turns": []
+  },
+  {
+    "id": "adversarial-05",
+    "category": "adversarial_distractor",
+    "task": "task1",
+    "query": "Madison called to compare reward structures between FirstStone Bank and other competitors, with an emphasis on reducing churn through matching rewards. Also determine whether this involved: amenities angeles cleanliness complaints contacted during hotels los luxstay missing natalie recent regarding report stay.",
+    "query_hash": "c78bc7d7991944c0",
+    "transcript_id": "263cfb9c-43cf-4d40-942d-a796ab5093af",
+    "answerable": true,
+    "expected_turns": []
+  },
+  {
+    "id": "unanswerable-01",
+    "category": "unanswerable",
+    "task": "task1",
+    "query": "Why did the customer's pet grooming appointment refund get cancelled?",
+    "query_hash": "6104fdabcd2966ba",
+    "transcript_id": null,
+    "answerable": false,
+    "expected_turns": []
+  },
+  {
+    "id": "unanswerable-02",
+    "category": "unanswerable",
+    "task": "task1",
+    "query": "Why did the customer's tractor lease deposit dispute get cancelled?",
+    "query_hash": "d7ff72421cecdd3d",
+    "transcript_id": null,
+    "answerable": false,
+    "expected_turns": []
+  },
+  {
+    "id": "unanswerable-03",
+    "category": "unanswerable",
+    "task": "task1",
+    "query": "Why did the customer's wedding photographer no-show fee get cancelled?",
+    "query_hash": "813b5f6c3595d5f4",
+    "transcript_id": null,
+    "answerable": false,
+    "expected_turns": []
+  },
+  {
+    "id": "unanswerable-04",
+    "category": "unanswerable",
+    "task": "task1",
+    "query": "Why did the customer's guitar lesson cancellation fee get cancelled?",
+    "query_hash": "ff23466bb1bea4f2",
+    "transcript_id": null,
+    "answerable": false,
+    "expected_turns": []
+  }
+]
